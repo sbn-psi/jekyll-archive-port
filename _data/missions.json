@@ -1,0 +1,17 @@
+{
+    "OSIRIS-REx": {
+        "url": "/orex",
+        "icon": "/images/orex.png",
+        "color": "#09215D"
+    },
+    "NEAR": {
+        "url": "/near",
+        "icon": "/images/near.png",
+        "color": "#72001A"
+    },
+    "Dawn": {
+        "url": "/dawn",
+        "icon": "/images/dawn.png",
+        "color": "#EF8922"
+    }
+}

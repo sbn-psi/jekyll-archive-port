@@ -1,0 +1,71 @@
+{
+    "lidvid": "urn:nasa:pds:ast_taxonomy",
+    "name": "Asteroid Taxonomy",
+    "authorList": [
+        "Neese C."
+    ],
+    "published": true,
+    "datePublished": "2010",
+    "delivery": null,
+    "humanDescription": null,
+    "abstract": "This data set is a collection of asteroid taxonomic classifications from various classification methods, collected from the literature.",
+    "citation": "Neese, C., Ed., Asteroid Taxonomy V6.0. EAR-A-5-DDR-TAXONOMY-V6.0. NASA Planetary Data System, 2010.",
+    "location": {
+        "browseUrl": "http://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy",
+        "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy.zip",
+        "size": "55 KB"
+    },
+    "alternateLocation": null,
+    "pds3": {
+        "name": "EAR-A-5-DDR-TAXONOMY-V6.0",
+        "location": {
+            "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0",
+            "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0.zip",
+            "size": "61 KB"
+        }
+    },
+    "superseded": [
+        {
+            "name": "EAR-A-5-DDR-TAXONOMY-V5.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V5_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V5_0.zip"
+            }
+        },
+        {
+            "name": "EAR-A-5-DDR-TAXONOMY-V4.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V4_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V4_0.zip"
+            }
+        },
+        {
+            "name": "EAR-A-5-DDR-TAXONOMY-V3.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V3_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V3_0.zip"
+            }
+        },
+        {
+            "name": "EAR-A-5-DDR-TAXONOMY-V2.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V2_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V2_0.zip"
+            }
+        },
+        {
+            "name": "EAR-A-5-DDR-TAXONOMY-V1.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V1_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V1_0.zip"
+            }
+        }
+    ],
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    }
+    
+}
+

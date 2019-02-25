@@ -1,0 +1,76 @@
+.sbn-header {
+    width: 100%;
+    background-color: #000;
+    height: 5em;
+    color: #ededed;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-shadow: 0 1px 2px #dadada;
+    background-image: url("../images/eros-narrow.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 25vw;
+    background-position-y: -40px;
+}
+.sbn-menu-handle {
+    position: absolute;
+    top: 5em;
+    padding: 0 0.5em;
+    right: 0;
+    background: #ededed;
+    
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.sbn-menu-handle a {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nasa-logo {
+    height: 3em;
+    background-color: #000;
+}
+.sbn-title-container {
+    background-color: #000;   
+    height: 100%;     
+    padding-left: 1em;
+}
+.sbn-title {
+    height: 40%;
+    display: flex;
+    font-size: 0.8em;
+}
+.sbn-title a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #ededed;
+}
+.sbn-title a:hover {
+    text-decoration: underline;
+}
+.sbn-subtitle {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #ededed;
+    font-size: 0.9em;
+}
+.sbn-subtitle:hover {
+    text-decoration: underline;
+}
+.gradient-bar {
+    width: 20vw;
+    height: 100%;
+    background: linear-gradient(to right, #000, rgba(0,0,0,0))
+}
+.menu-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.menu-clickable {
+    margin: 0;
+    padding: 0;
+    color: white;
+}

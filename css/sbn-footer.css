@@ -1,0 +1,37 @@
+.sbn-footer {
+    width: 100%;
+    background: #616161;
+    color: #FFFFFF;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sbn-footer-text {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    text-align: center;
+}
+.sbn-footer-extended {
+    background: #333;
+    color: #FFF;
+    height: 20em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sbn-footer-psi-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.psi-logo {
+    width: 12em;
+    background: white;
+    padding: 0;
+    margin: 0 0 1em 0;
+    border-radius: 10em;
+}

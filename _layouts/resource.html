@@ -1,0 +1,130 @@
+---
+layout: default
+---
+{% assign data = site.data.datasets[page.dataset] %}
+{% assign mission = site.data.missions[data.mission] %}
+{% assign target = site.data.targets[data.target.name] %}
+
+<div id="taxonomy">
+    {% if mission %}
+    <div class="mission banner" style="background-color: {{ mission.color }}">
+        <a class="ignore-a-styling" href="{{ mission.url }}">
+            <img src="{{ mission.icon }}">
+            <span>Data from {{ data.mission }}</span>
+        </a>
+    </div>
+    {% endif %}
+    {% if target %}
+    <div class="target banner">
+        <a class="ignore-a-styling" href="{{ target.url }}">
+            <img src="{{ target.icon }}">
+            <span> Data from {{ data.target.name }}</span>
+        </a>
+    </div>
+    {% endif %}
+    {% for tag in page.tags %}
+    <div class="banner">
+        {% assign tagData = site.data.tags[tag] %}
+        <a class="ignore-a-styling" href="{{ tagData.url }}">
+            <span> {% if tagData.displayName.size > 0 %} {{ tagData.displayName }} {% else %} {{ tag }} {% endif %} </span>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div itemscope itemtype="https://schema.org/Dataset">
+    <h1 itemprop="name">{{ data.name }}</h1>
+    {% if data.humanDescription %}
+    <h3 itemprop="description">{{ data.humanDescription }}</h3>
+    {% else %}
+    <h3 itemprop="description">{{ data.abstract }}</h3>
+    {% endif %}
+    {% if data.delivery %} 
+        <section class="dataset-delivery">
+            <p>{{ data.delivery.completionText }}</p>
+            <p>Latest release date: <span class="datum">{{ data.delivery.date }}</span></p>
+        </section><br/>
+    {% endif %}
+    <aside>
+        <section class="dataset-metadata">
+            <p>Status: 
+                {% if data.published %} <span class="datum">Published</span>
+                {% else %} <span class="datum">Accumulating</span>
+                {% endif %}
+            </p>
+            {% if data.published %}<p>Date Published: <span class="datum" itemprop="datePublished" itemscope itemtype="http://schema.org/Date">{{ data.datePublished }}</span></p>{% endif %}
+            <p>Publisher: <span class="datum" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">{{ data.publisher.name }}</span></p>
+            <p>PDS4 ID: <span class="datum">{{ data.lidvid }}</span></p>
+            
+            
+            <p>Author(s):
+                {% for author in data.authorList %}
+                <span class="datum" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ author }}</span><br/>
+                {% endfor %}    
+            </p>
+            
+            <!-- Hidden data values-->
+            <span class="datum" itemprop="provider" style="display:none" itemscope itemtype="http://schema.org/Organization">{{ data.provider.name }}</span>
+        </section>
+    </aside>
+    {% if data.location %}
+        <section class="dataset-links">
+            <a href="{{ data.location.browseUrl }}"><img src="/images/icn-folder.png"><span> Browse</span></a>
+            <a href="{{ data.location.downloadUrl }}"><img src="/images/icn-download.png"> <span> Download {% if data.location.size %} <span class="download-size">({{ data.location.size }})</span> {% endif %}</span></a>
+        </section>
+    {% endif %}
+    {% if data.citation %}
+        <section class="dataset-citation">
+            <p>Use the following citation to reference this data set:</p>
+            <p class="citation">"{{ data.citation }}"</p>
+        </section>
+    {% endif %}
+    <div class="related-references">
+    {% if data.pds3.size > 0 %}
+        <section class="dataset-pds3">
+            <h3 class="header"> PDS3 versions of this data set: </h3>
+            {{ data.pds3.name }}
+            <a href="{{ data.pds3.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
+            <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.size %} <span class="download-size">({{ data.pds3.location.size }})</span> {% endif %}</a>
+        </section>
+    {% endif %}
+    {% if data.superseded.size > 0 %}
+        <section class="dataset-superseded">
+            <h3 class="header"> Superseded versions of this data set: </h3>
+            <ul>
+                {% for superseded in data.superseded %}
+                <li>
+                    {{ superseded.name }}
+                    <a href="{{ superseded.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
+                    <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.size %} <span class="download-size">({{ superseded.location.size }})</span> {% endif %}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            </section>
+    {% endif %}
+    {% if data.relatedTools.size > 0 %}
+        <section class="dataset-related">
+            <h3 class="header"> Related Tools: </h3>
+            <ul>
+                {% for related in data.relatedTools %}
+                <li>
+                    <a href="{{ related.url }}">{{ related.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            </section>
+    {% endif %}
+    {% if data.relatedData.size > 0 %}
+        <section class="dataset-related">
+            <h3 class="header"> Related Datasets: </h3>
+            <ul>
+                {% for related in data.relatedData %}
+                <li>
+                    <a href="{{ related.url }}">{{ related.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            </section>
+    {% endif %}
+    </div>
+</div>

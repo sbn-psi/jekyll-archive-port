@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>{{ page.title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/sbn-header.css">
+    <link rel="stylesheet" href="/css/sbn-sidebar.css">
+    <link rel="stylesheet" href="/css/sbn-footer.css">
+    <link rel="stylesheet" href="/css/project-main.css">
+</head>
+<body>
+    <!-- BEGIN sbn-header -->
+
+    <header class="sbn-header">
+        <a href="http://www.nasa.gov/"><img src="https://sbn.psi.edu/pds/images/NASA_logo_original.svg" alt="NASA Logo" title="NASA Logo" class="nasa-logo"></a>
+        <div class="sbn-title-container">
+            <div class="sbn-title"><a class="ignore-a-styling" href="http://pdssbn.astro.umd.edu/">PDS Small Bodies Node</a></div>
+            <a class="sbn-subtitle ignore-a-styling" href="https://sbn.psi.edu/pds/">Asteroid/Dust Subnode</a>
+        </div>
+        <div class="gradient-bar"></div>
+    </header>
+    
+    <aside class="sbn-menu-handle" id="sbn-menu-handle">
+        <a href="#sbn-sidebar"><span>Menu</span>
+        <img src="https://sbn.psi.edu/pds/images/menu_white.svg" alt=""></a>
+    </aside>
+    
+    <!-- END sbn-header -->
+    <main class="sbn-main">
+        <!-- BEGIN main content -->
+        {{ content }}
+    </main>
+    <!-- END main content -->
+    <!-- BEGIN sbn-sidebar -->
+
+    <nav class="sbn-sidebar" id="sbn-sidebar">
+        <h3 class="sbn-sidebar-header">Find Data</h3>
+        <ul class="sbn-sidebar-ul">
+            <a class="sbn-sidebar-li ignore-a-styling" href="https://sbn.psi.edu/pds/">Browse Full Archive</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="http://sbntools.psi.edu/ferret">Ferret (Target Search)</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="http://sbn.psi.edu/sbib/">SBIB (Image Search)</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="http://sbntools.psi.edu/neosearch/">NEO Survey Search</a>
+        </ul>
+    
+        <h3 class="sbn-sidebar-header">Submit Data</h3>
+        <ul class="sbn-sidebar-ul">
+            <a class="sbn-sidebar-li ignore-a-styling" href="https://sbn.psi.edu/pds/olafs/">OLAF</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="https://sbn.psi.edu/pds/other_tools/pdf1a.html">PDF/A Tools</a>
+        </ul>
+    
+        <h3 class="sbn-sidebar-header">PDS</h3>
+        <ul class="sbn-sidebar-ul">
+            <a class="sbn-sidebar-li ignore-a-styling" href="http://pds.jpl.nasa.gov/">PDS Home</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="http://pdssbn.astro.umd.edu/">SBN Home</a>
+            <a class="sbn-sidebar-li ignore-a-styling" href="https://sbn.psi.edu/pds/">Asteroid/Dust Home</a>
+        </ul>
+    </nav>
+    
+    <!-- END sbn-sidebar -->
+    <!-- BEGIN sbn-footer -->
+
+    <footer class="sbn-footer">
+        <p class="sbn-footer-text">
+            For questions about the data sets or this web site, contact Carol Neese (<a href="mailto:neese@psi.edu" class="link">neese@psi.edu</a>).
+        </p>
+    </footer>
+    
+    <div class="sbn-footer-extended">
+        <aside class="sbn-footer-psi-container">
+            <img src="https://sbn.psi.edu/pds/images/PSI_Logo.png" alt="PSI Logo" title="PSI Logo" class="psi-logo">
+            <span>Hosted by the Planetary Science Institute</span>
+        </aside>
+    </div>
+    
+    <!-- END sbn-footer -->
+
+</body>
+</html>
+    

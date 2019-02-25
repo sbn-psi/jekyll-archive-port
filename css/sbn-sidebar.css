@@ -1,0 +1,32 @@
+.sbn-sidebar {
+    border: 0.05em solid #BDBDBD;
+    background: #D5D5D5;
+    border-bottom: 1px solid #BDBDBD;
+    box-shadow: 1px 1px 2px #dadada;
+}
+.sbn-sidebar-header {
+    margin: 0;
+    padding: 0.5em 0.5em;
+    color: #0B3D91;
+}
+.sbn-sidebar-header:not(:first-of-type) {
+    margin: 0.5em 0 0 0;
+}
+.sbn-sidebar-ul {
+    margin: 0;
+    padding: 0;
+}
+.sbn-sidebar-li {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.6em 0.6em;
+    color: #000000;
+    background: #EDEDED;
+}
+.sbn-sidebar-li:hover {
+    text-decoration: underline;
+}
+.sbn-sidebar-li:not(:first-child) {
+    border-top: 0.1em solid #BDBDBD;
+}
