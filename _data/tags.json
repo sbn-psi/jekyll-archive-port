@@ -1,15 +1,15 @@
 {
     "asteroid": {
         "displayName": "Asteroid Datasets",
-        "url": "/tags/asteroids"
+        "url": "/datasets#asteroid"
     },
     "image": {
         "displayName": "Image Datasets",
-        "url": "/tags/images"
+        "url": "/datasets#image"
     },
     "physicalProperties": {
         "displayName": "Physical Properties Datasets",
-        "url": "/tags/physical-properties"
+        "url": "/datasets#physicalProperties"
     }
     
 }

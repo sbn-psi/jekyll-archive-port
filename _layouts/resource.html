@@ -70,7 +70,7 @@ layout: default
     {% if data.location %}
         <section class="dataset-links">
             <a href="{{ data.location.browseUrl }}"><img src="/images/icn-folder.png"><span> Browse</span></a>
-            <a href="{{ data.location.downloadUrl }}"><img src="/images/icn-download.png"> <span> Download {% if data.location.size %} <span class="download-size">({{ data.location.size }})</span> {% endif %}</span></a>
+            <a href="{{ data.location.downloadUrl }}"><img src="/images/icn-download.png"> <span> Download {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span></a>
         </section>
     {% endif %}
     {% if data.citation %}
@@ -85,7 +85,7 @@ layout: default
             <h3 class="header"> PDS3 versions of this data set: </h3>
             {{ data.pds3.name }}
             <a href="{{ data.pds3.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
-            <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.size %} <span class="download-size">({{ data.pds3.location.size }})</span> {% endif %}</a>
+            <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.downloadSize %} <span class="download-size">({{ data.pds3.location.downloadSize }})</span> {% endif %}</a>
         </section>
     {% endif %}
     {% if data.superseded.size > 0 %}
@@ -96,7 +96,7 @@ layout: default
                 <li>
                     {{ superseded.name }}
                     <a href="{{ superseded.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
-                    <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.size %} <span class="download-size">({{ superseded.location.size }})</span> {% endif %}</a>
+                    <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.downloadSize %} <span class="download-size">({{ superseded.location.downloadSize }})</span> {% endif %}</a>
                 </li>
                 {% endfor %}
             </ul>

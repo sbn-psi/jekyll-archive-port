@@ -13,7 +13,7 @@
     "location": {
         "browseUrl": "http://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy",
         "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy.zip",
-        "size": "55 KB"
+        "downloadSize": "55 KB"
     },
     "alternateLocation": null,
     "pds3": {
@@ -21,7 +21,7 @@
         "location": {
             "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0",
             "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_5_DDR_TAXONOMY_V6_0.zip",
-            "size": "61 KB"
+            "downloadSize": "61 KB"
         }
     },
     "superseded": [
