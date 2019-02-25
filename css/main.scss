@@ -7,7 +7,7 @@ body {
 }
 a:not(.ignore-a-styling) {
     // text-decoration: none;
-    letter-spacing: 0.1em;
+    // letter-spacing: 0.1em;
 }
 
 
@@ -224,6 +224,48 @@ main aside {
             height: 0;
             border-top: 20px solid red;
             border-right: 20px solid transparent;
+        }
+    }
+}
+
+.mission-header {
+    color: white;
+    margin-left: -$main-padding;
+    margin-right: -$main-padding;
+    
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px;
+    img {
+        max-height: 150px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    & ~ aside {
+        margin-top: -40px;
+    }
+}
+
+.primary-table {
+    clear: both;
+    border: none;
+    * {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+    }
+    td {
+        .title {
+            font-size: 1.1em;
+            font-weight: bolder;
+        }
+        .description {
+            font-size: 0.9em;
+            color: rgba(0, 0, 0, 0.7);
         }
     }
 }

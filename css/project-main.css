@@ -3,9 +3,6 @@ body {
   padding: 0;
   font-family: 'Noto Sans', sans-serif; }
 
-a:not(.ignore-a-styling) {
-  letter-spacing: 0.1em; }
-
 /* main */
 .sbn-main {
   padding: 0.7em;
@@ -178,5 +175,35 @@ main aside {
       height: 0;
       border-top: 20px solid red;
       border-right: 20px solid transparent; }
+
+.mission-header {
+  color: white;
+  margin-left: -0.7em;
+  margin-right: -0.7em;
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 20px; }
+  .mission-header img {
+    max-height: 150px; }
+  .mission-header h1 {
+    font-size: 2.5em; }
+  .mission-header ~ aside {
+    margin-top: -40px; }
+
+.primary-table {
+  clear: both;
+  border: none; }
+  .primary-table * {
+    border-collapse: collapse; }
+  .primary-table th, .primary-table td {
+    padding: 5px; }
+  .primary-table td .title {
+    font-size: 1.1em;
+    font-weight: bolder; }
+  .primary-table td .description {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.7); }
 
 /*# sourceMappingURL=project-main.css.map */

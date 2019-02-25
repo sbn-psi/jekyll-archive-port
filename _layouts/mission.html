@@ -1,0 +1,109 @@
+---
+layout: default
+---
+{% assign mission = site.data.missions[page.mission] %}
+
+<section class="mission-header" style="background-color: {{ mission.color }}">
+    <img src="{{ mission.icon }}">
+    <h1> {{ page.mission }} Data Archive </h1>
+</section>
+     
+<aside>
+    <section class="dataset-metadata">
+        <p>Main target body: <span class="datum">Asteroid (101955) Bennu</span></p>
+        <p>Launch date: <span class="datum">8 September 2016</span></p>
+        <p>Earth flyby date: <span class="datum">22 September 2017</span></p>
+        <p>Bennu orbit insertion: <span class="datum">31 December 2018</span></p>
+        <p>Bennu orbit departure: <span class="datum">3 March 2021 (planned)</span></p>
+        <p>Return to Earth: <span class="datum">24 September 2023 (planned)</span></p>
+    </section>
+</aside>
+
+<h2> Latest release information: </h2>
+            
+<ul>
+<li> Mission bundle: Initial release, Feb. 15, 2019
+<li> OCAMS bundle: EGA and Cruise released Feb. 15, 2019
+<li> OVIRS bundle: EGA and Cruise released Feb. 15, 2019
+<li> TAGCAMS bundle:  EGA and Cruise released Feb. 15, 2019
+</ul>
+
+<section class="primary-table">
+
+<h2>{{ page.mission }} primary instrument data:</h2>
+
+<table border=2>
+
+<thead>
+<th width=100>Data type
+<th width=300>Instrument Data
+</thead><tbody>
+<tr>
+<th rowspan=2>Images
+<td><a href="ocams.html"><span class="title">OCAMS</span></a>
+<span class="description">The OSIRIS-REx Camera Suite consists of MapCam, a medium
+field imager; PolyCam, a narrow-field imager; and SamCam, a wide-field camera
+for context images and recording the sampling event.</span>
+
+<tr>
+<td><a href="tagcams.html"><span class="title">TAGCAMS</span></a>
+<span class="description"> The Touch and Go Camera System provides imaging to aid
+in navigation to and around Bennu, to aid in sample acquisition, and to
+confirm sample stowage.</span>
+
+<tr>
+<th rowspan=2>Spectra
+<td><a href="ovirs.html"><span class="title">OVIRS</span></a>
+<span class="description">The OSIRIS-REx Visible and Infrared Spectrometer is a point
+spectrometer with a wavelength range of 0.4 to 4.3 microns.</span>
+
+<tr>
+<td><span class="title">OTES - not yet available</span>
+<span class="description">The OSIRIS-REx Thermal Emission Spectrometer is a compact,
+spot Fourier-transform infrared interferometric spectrometer measuring
+absolute flux of thermally emitted radiation from 5.5 to 50 microns.</span>
+
+<tr>
+<th>Nuclear
+<td><span class="title">REXIS - not yet available</span>
+<span class="description">The Regolith X-Ray Imaging Spectrometer measures solar
+X-ray-induced fluorescence from Bennu to map the distribution of
+elements across its surface.</span>
+
+<tr>
+<th> Magnetometer
+<td> 
+<span class="description">No magnetometer instrument on OSIRIS-REx</span>
+
+<tr>
+<th> Dust
+<td> 
+<span class="description">No dust detector on OSIRIS-REx</span>
+
+<tr>
+<th> Altimetry
+<td><span class="title">OLA - not yet available</span>
+<span class="description">The OSIRIS-REx Laser Altimeter is a scanning LIDAR system
+providing measurement of spacecraft range to the target body.</span>
+
+<tr>
+<th>Radio Science
+<td><span class="title">Radio Science - Not yet available</span>
+<span class="description">The OSIRIS-REx radio science observations will provide
+the information necessary to make estimates of the gravity field, mass,
+and other physical characteristics of Bennu.</span>
+
+<tr>
+<th> SPICE
+<td><a href="https://naif.jpl.nasa.gov/pub/naif/pds/pds4/orex/orex_spice/"><span class="title">OSIRIS-REx SPICE Archive</span></a>
+<span class="description">Archived at NAIF</span>
+
+<tr>
+<th> Mission
+<td><a href="orexmission.html"><span class="title">OSIRIS-REx Mission Bundle</span></a>
+<span class="description">This bundle contains information and documentation relevant
+to the mission as a whole.</span>
+</tbody>
+</table>
+
+</section>
