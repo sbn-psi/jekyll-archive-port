@@ -1,0 +1,64 @@
+{
+    "lidvid": "urn:nasa:pds:epoxi_mri:hartley2_photometry",
+    "name": "EPOXI MRI-VIS 103P/Hartley 2 Encounter Photometry Collection",
+    "authorList": [
+        "Womack, M.",
+        " Curtis, A.",
+        " Lastra, N.",
+        " Harrington Pinto, O.",
+        " Rabson, D.A.",
+        " Wierzchos, K.",
+        " Cox, T.",
+        " Rivera, I.",
+        " Mentzer, C.",
+        " Ruffini, N.",
+        " Jackson, C.",
+        " and Micciche, A."
+    ],
+    "published": true,
+    "datePublished": "2018",
+    "humanDescription": null,
+    "abstract": "We perform photometric measurements of comet 103P/Hartley 2 using images taken through the CLEAR1 (broadband, 200-1100 nm), CN (387 nm), OH (309 nm), C2 (514 nm), and two continuum filters (Ultraviolet at 345 nm and Green at 526 nm) of the Medium Resolution Instrument (MRI) on board the Deep Impact flyby spacecraft from 1 October to 26 November 2010 during the EPOXI mission.",
+    "citation": "Bodewits, D.; Farnham, T.; and A'Hearn, M., EPOXI MRI-VIS 103P/Hartley 2 Encounter Photometry Collection, urn:nasa:pds:epoxi_mri:hartley2_photometry::1.0, NASA Planetary Data System, 2018.",
+    "mission": null,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri:hartley2_photometry-v1.0/",
+        "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri:hartley2_photometry-v1.0/SUPPORT/DOWNLOAD/",
+        "checksumUrl" : "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri:hartley2_photometry-v1.0/SUPPORT/CHECKSUM/current.md5",
+        "downloadSize": "13.5 MB"
+    },
+    "checksumUrl" : "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri-v1.0/hartley2_photometry/SUPPORT/CHECKSUM/current.md5",
+    "target": {
+        "name": "103P/Hartley 2",
+        "type": "Comet"
+    },
+    "pds3": {
+        "name": "DIF-C-MRI-5-EPOXI-HARTLEY2-PHOTOM-V1.0",
+        "location": {
+            "browseUrl": "https://pdssbn.astro.umd.edu/holdings/dif-c-mri-5-epoxi-hartley2-photom-v1.0/",
+            "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/dif-c-mri-5-epoxi-hartley2-photom-v1.0/DOWNLOAD/",
+            "downloadSize": "13.9 MB"
+        }
+    },
+    "primaryLinks": [
+        
+    ],
+    "relatedTools": [],
+    "relatedData": [
+        {
+            "name": "EPOXI MRI Observations Bundle",
+            "url": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri-v1.0/SUPPORT/dataset.html"
+        }
+    ],
+    "example": {
+        "name": "Example File",
+        "url": "#"
+    },
+    "localDocumentsUrl": "#",
+    "otherInstrumentsUrl": "#",
+    "missionBundleUrl": "#",
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    }
+}

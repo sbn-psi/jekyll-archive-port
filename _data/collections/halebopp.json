@@ -1,0 +1,56 @@
+{
+    "lidvid": " urn:nasa:pds:compil-comet:halebopp",
+    "name": "Hale-Bopp Visual Lightcurve",
+    "authorList": [
+        "Womack, M.",
+        " Curtis, A.",
+        " Lastra, N.",
+        " Harrington Pinto, O.",
+        " Rabson, D.A.",
+        " Wierzchos, K.",
+        " Cox, T.",
+        " Rivera, I.",
+        " Mentzer, C.",
+        " Ruffini, N.",
+        " Jackson, C.",
+        " and Micciche, A."
+    ],
+    "published": true,
+    "datePublished": "2018",
+    "humanDescription": null,
+    "abstract": "This dataset contains visual magnitudes of comet C/1995 O1 (Hale-Bopp) that were obtained from the International Comet Quarterly and processed to provide a secular lightcurve from -7 au (pre-perihelion) to +8 au (post-perihelion). The original apparent magnitudes from 17 observers were corrected for geocentric distance and phase angle, and then combined in a systematic way that yielded a self-consistent consensus fit. In analyzing visual data from multiple observers, the questions inevitably arise of which data to reject, and under what justification, and whether combining data from observers, each with their own systematic errors, leads to a biased result. Without instrumental calibration, there is no certain answer to these questions, and such calibration is not available for the observations discussed here. We estimated the shifts with a self-consistent statistical approach, leading to a sharper light curve and improving the precision of the measured slopes. The dataset includes the original apparent magnitudes, those corrected for geocentric distance and phase angle, and the final shifted and weighted values. The final secular lightcurve is the best produced to date for comet Hale-Bopp.",
+    "citation": "Womack, M.; Curtis, A.; Lastra, N.; Harrington Pinto, O.; Rabson, D.A.; Wierzchos, K.; Cox, T.; Rivera, I.; Mentzer, C.; Ruffini, N.; Jackson, C.; and Micciche, A.; Hale-Bopp Visual Lightcurve; urn:nasa:pds:compil-comet:halebopp::1.0; NASA Planetary Data System, 2018.",
+    "mission": null,
+    "delivery": null,
+    "doi": "10.26007/XBSH-X639",
+    "location": {
+        "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet:halebopp-v1.0/",
+        "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet:halebopp-v1.0/SUPPORT/DOWNLOAD/",
+        "checksumUrl" : "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet:halebopp-v1.0/SUPPORT/CHECKSUM/current.md5",
+        "downloadSize": "919.5 KB"
+    },
+    "target": {
+        "name": "C/1995 O1 (Hale-Bopp)",
+        "type": "Comet"
+    },
+    "pds3": null,
+    "relatedTools": [],
+    "relatedData": [
+        {
+            "name": "Comet Data Compilations from Published Sources",
+            "url": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/SUPPORT/dataset.html"
+        }
+
+    ],
+    "example": {
+        "name": "Example File",
+        "url": "#"
+    },
+    "localDocumentsUrl": "#",
+    "otherInstrumentsUrl": "#",
+    "missionBundleUrl": "#",
+    "bundleId": "",
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    }
+}

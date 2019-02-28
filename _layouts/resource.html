@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-{% assign data = site.data.datasets[page.dataset] %}
+{% if page.layout == 'bundle' %}
+{% assign data = site.data.bundles[page.dataset] %}
+{% elsif page.layout == 'collection' %}
+{% assign data = site.data.collections[page.dataset] %}
+{% endif %}
+
 {% assign mission = site.data.missions[data.mission] %}
 {% assign target = site.data.targets[data.target.name] %}
 
@@ -33,31 +38,31 @@ layout: default
 </div>
 
 <div itemscope itemtype="https://schema.org/Dataset">
+    
     <h1 itemprop="name">{{ data.name }}</h1>
-    {% if data.humanDescription %}
-    <h3 itemprop="description">{{ data.humanDescription }}</h3>
-    {% else %}
-    <h3 itemprop="description">{{ data.abstract }}</h3>
-    {% endif %}
+    
     {% if data.delivery %} 
-        <section class="dataset-delivery">
+        <div class="dataset-delivery">
             <p>{{ data.delivery.completionText }}</p>
             <p>Latest release date: <span class="datum">{{ data.delivery.date }}</span></p>
-        </section><br/>
+        </div>
     {% endif %}
+    
     <aside>
         <section class="dataset-metadata">
-            <p>Status: 
+            <p>Status: <br/>
                 {% if data.published %} <span class="datum">Published</span>
                 {% else %} <span class="datum">Accumulating</span>
                 {% endif %}
             </p>
-            {% if data.published %}<p>Date Published: <span class="datum" itemprop="datePublished" itemscope itemtype="http://schema.org/Date">{{ data.datePublished }}</span></p>{% endif %}
-            <p>Publisher: <span class="datum" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">{{ data.publisher.name }}</span></p>
-            <p>PDS4 ID: <span class="datum">{{ data.lidvid }}</span></p>
+            {% if data.published %}<p>Date Published: <br/><span class="datum" itemprop="datePublished" itemscope itemtype="http://schema.org/Date">{{ data.datePublished }}</span></p>{% endif %}
+            <p>Publisher:<br/>
+                <span class="datum" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">{{ data.publisher.name }}</span>
+            </p>
+            {% if data.lidvid %}<p>PDS4 ID: <br/><span class="datum">{{ data.lidvid }}</span></p>{% endif %}
+            {% if data.doi %}<p>DOI:<br/> <span class="datum">{{ data.doi }}</span></p>{% endif %}
             
-            
-            <p>Author(s):
+            <p>Author(s):<br/>
                 {% for author in data.authorList %}
                 <span class="datum" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ author }}</span><br/>
                 {% endfor %}    
@@ -66,23 +71,42 @@ layout: default
             <!-- Hidden data values-->
             <span class="datum" itemprop="provider" style="display:none" itemscope itemtype="http://schema.org/Organization">{{ data.provider.name }}</span>
         </section>
-    </aside>
-    {% if data.location %}
+        {% if data.location %}
         <section class="dataset-links">
-            <a href="{{ data.location.browseUrl }}"><img src="/images/icn-folder.png"><span> Browse</span></a>
-            <a href="{{ data.location.downloadUrl }}"><img src="/images/icn-download.png"> <span> Download {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span></a>
+            <a href="{{ data.location.browseUrl }}"><img src="/images/icn-folder.png"><span> Browse All </span></a>
+            <a href="{{ data.location.downloadUrl }}"><img src="/images/icn-download.png"> <span> Download All {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span></a>
+            {% if data.location.checksumUrl %}
+            <a href="{{ data.location.checksumUrl }}"><img src="/images/icn-checksum.png"><span> View Checksums </span></a>
+            {% endif %}
         </section>
+        {% endif %}
+    </aside>
+
+    {% if data.humanDescription %}
+    <h3 itemprop="description" class="resource-description">{{ data.humanDescription }}</h3>
+    {% else %}
+    <h3 itemprop="description" class="resource-description">{{ data.abstract }}</h3>
     {% endif %}
+    
     {% if data.citation %}
         <section class="dataset-citation">
-            <p>Use the following citation to reference this data set:</p>
-            <p class="citation">"{{ data.citation }}"</p>
+            <img class="start-quote" src="/images/quotes-start.png">
+            <div>
+                <p>Use the following citation to reference this data set:</p>
+                <p class="citation">"{{ data.citation }}"</p>
+            </div>
+            <img class="end-quote" src="/images/quotes-end.png">
         </section>
     {% endif %}
+    
+    
+    {{ content }}
+    
+    
     <div class="related-references">
     {% if data.pds3.size > 0 %}
         <section class="dataset-pds3">
-            <h3 class="header"> PDS3 versions of this data set: </h3>
+            <h3 class="header"> PDS3 versions of this dataset: </h3>
             {{ data.pds3.name }}
             <a href="{{ data.pds3.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
             <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.downloadSize %} <span class="download-size">({{ data.pds3.location.downloadSize }})</span> {% endif %}</a>

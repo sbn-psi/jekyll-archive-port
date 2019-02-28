@@ -6,6 +6,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 a:not(.ignore-a-styling) {
+    color: $link;
     // text-decoration: none;
     // letter-spacing: 0.1em;
 }
@@ -15,15 +16,12 @@ a:not(.ignore-a-styling) {
 .sbn-main {
     padding: $main-padding;
     min-height: calc(100vh - 8em);
-
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
 }
 
 section {
     display: block;
+    max-width: $readable-width;
+    box-sizing: border-box;
 }
 
 /* iPhone 6 & wider */
@@ -85,9 +83,10 @@ h1 {
 
 main aside {
     float: right;
-    max-width: 50%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     section {
         margin-bottom: 1em;
         margin-right: 15px;
@@ -97,9 +96,15 @@ main aside {
 
 .datum {
     font-weight: bold;
+    margin-left: 1em;
 }
 .download-size {
     font-size: 0.7em;
+}
+
+.resource-description {
+    font-weight: 200;
+    max-width: $readable-width;
 }
 
 .dataset-metadata {
@@ -118,7 +123,6 @@ main aside {
 }
 
 .dataset-pds3, .dataset-superseded, .dataset-related {
-    font-size: 0.9em;
     background-color: #EDEDED;
     padding: 20px;
     margin: 15px;
@@ -130,6 +134,13 @@ main aside {
         text-align: center;
         color: white;
         font-size: 1.3em;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    li {
+        margin-bottom: 0.2em;
     }
 }
 
@@ -156,16 +167,38 @@ main aside {
     }
 }
 
-.dataset-links {
-    margin: 0 auto;
+.dataset-citation {
+    margin-top: 2em;
+    margin-bottom: 2em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    font-style: italic;
+    .citation {
+        font-style: normal;
+    }
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .start-quote {
+        align-self: flex-start;
+        margin-right: 0.5em;
+    }
+    .end-quote {
+        align-self: flex-end;
+        margin-left: 0.5em;
+    }
+}
+
+.dataset-links {
+    display: flex;
+    flex-flow: column wrap;
     justify-content: space-around;
-    padding: 30px;
+    background-color: #EDEDED;
+    flex-grow: 1;
+    padding: 1em;
     a {
-        margin: 1em;
-        height: 120px;
-        width: 120px;
+        height: 60px;
         background-color:$link;
         color: white;
         padding: 14px 20px;
@@ -176,13 +209,16 @@ main aside {
         box-sizing: border-box;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
         img {
-            height: 2em;
+            height: 1.3em;
             color: white;
-            margin-bottom: 0.5em;
+            margin-right: 0.5em;
         }
     }
 }
@@ -249,14 +285,14 @@ main aside {
     }
 }
 
-.primary-table {
+table {
     clear: both;
     border: none;
-    * {
-        border-collapse: collapse;
-    }
+    border-collapse: collapse;
+    border: 2px solid $superDarkGrey;
     th, td {
         padding: 5px;
+        border: 1px solid $grey;
     }
     td {
         .title {
@@ -266,6 +302,75 @@ main aside {
         .description {
             font-size: 0.9em;
             color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+.card {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $grey;
+    box-shadow: 1px 1px 5px 0 #c6c6c6;
+    border-radius: 10px;
+}
+
+.dataset-collections {
+    // clear: both;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    & > .header {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        .type-title {
+            font-size: 1.7em;
+        }
+        .date {
+            color: $darkGrey;
+            text-align: text-bottom;
+        }
+        .bar-button {
+            margin-left: auto;
+        }
+        & ~ .product:nth-child(2) {
+            margin-top: 0.8em;
+        }
+    }
+}
+.collection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0.5em;
+    border-top: 1px solid $lightGrey;
+    &:first-child {
+        border-top: unset;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        .example:before {
+            content: 'Inside: ';
+            color: $darkGrey;
+        }
+    }
+    .collection-title {
+        font-size: 1.2em;
+        color: $link;
+    }
+    .actions {
+        flex-grow: 1;
+        
+        font-size: 0.9em;
+
+        display: flex;
+        flex-flow: row-reverse wrap;
+        align-items: center;
+        img {
+            height: 2.5em;
+            margin: 0.5em;
         }
     }
 }

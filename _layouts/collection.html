@@ -1,0 +1,29 @@
+---
+layout: resource
+---
+{% assign data = site.data.collections[page.dataset] %}
+
+<section class="dataset-quicklinks">
+    <ul>
+        {% if data.example.size > 0 %}
+        <li>
+            <a href="{{data.example.url}}">{{ data.example.name }}</a>
+        </li>
+        {% endif %}
+        {% if data.localDocumentsUrl %}
+        <li>
+            <a href="{{data.localDocumentsUrl}}">Local Documents</a>
+        </li>
+        {% endif %}
+        {% if data.otherInstrumentsUrl %}
+        <li>
+            <a href="{{data.otherInstrumentsUrl}}">Other Instruments</a>
+        </li>
+        {% endif %}
+        {% if data.missionBundleUrl %}
+        <li>
+            <a href="{{data.missionBundleUrl}}">Mission Bundle</a>
+        </li>
+        {% endif %}
+    </ul>
+</section>

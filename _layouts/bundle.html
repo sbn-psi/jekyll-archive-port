@@ -1,0 +1,38 @@
+---
+layout: resource
+---
+{% assign data = site.data.bundles[page.dataset] %}
+
+{% if data.collections.size > 0 %}
+<section class="dataset-collections">
+    <div class="header">
+        <div>
+            <span class="type-title">In this dataset...</span>
+        </div>
+    </div>
+    {% for collectionStub in data.collections %}
+        {% assign collectionId = collectionStub.id %}
+        {% assign collectionData = site.data.collections[collectionId] %}
+        {% for post in site.posts %}
+            {% if post.dataset == collectionId %}
+                {% assign collectionPost = post %}
+                {{ collectionPost.name }}
+            {% endif %}
+        {% endfor %}
+        <div class="collection">
+            <div class="header">
+                <span class="collection-title" title="Collection Title">{{collectionStub.displayName}}</span>
+                {% if collectionData.example.size > 0 %}
+                <span class="example">
+                    <a href="{{ collectionData.example.url }}">{{ collectionData.example.name }}</a>
+                </span>
+                {% endif %}
+            </div>
+            <div class="actions">
+                <a href="{{ collectionStub.location.downloadUrl }}"><img src="/images/icn-download-rnd.png"> {% if collectionStub.location.downloadSize %} <span class="download-size">({{ collectionStub.location.downloadSize }})</span> {% endif %}</a>
+                <a href="{{ collectionPost.permalink }}"><img src="/images/icn-folder-rnd.png"></a>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+{% endif %}

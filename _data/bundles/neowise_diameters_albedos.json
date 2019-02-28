@@ -1,0 +1,61 @@
+{
+    "lidvid": "urn:nasa:pds:neowise_diameters_albedos",
+    "name": "NEOWISE Diameters and Albedos",
+    "authorList": [
+        "Mainzer, A.K.",
+        "Bauer, J.M., Cutri",
+        "R.M., Grav",
+        "T., Kramer",
+        "E.A., Masiero, J.R.",
+        "Nugent, C.R.",
+        "Sonnett, S.M.",
+        "Stevenson, R.A.",
+        "Wright, E.L."
+    ],
+    "doi": null,
+    "published": true,
+    "datePublished": "November 2018",
+    "humanDescription": null,
+    "abstract": "This PDS data set represents a compilation of published diameters, optical albedos, near-infrared albedos, and beaming parameters for minor planets detected by NEOWISE during the fully cryogenic, 3-band cryo, post-cryo and NEOWISE-Reactivation Year 1 operations. It contains data covering near-Earth asteroids, Main Belt asteroids, active Main Belt objects, Hildas, Jupiter Trojans, Centaurs, and Jovian and Saturnian irregular satellites. Methodology for physical property determination is described in the referenced articles.",
+    "citation": "Mainzer, A.K., Bauer, J.M., Cutri, R.M., Grav, T., Kramer, E.A., Masiero, J.R., Nugent, C.R., Sonnett, S.M., Stevenson, R.A., and Wright, E.L., NEOWISE Diameters and Albedos V1.0. urn:nasa:pds:neowise_diameters_albedos::1.0. NASA Planetary Data System, 2018.",
+    "mission": null,
+    "delivery": null,
+    "location": {
+        "browseUrl": "http://sbnarchive.psi.edu/pds4/non_mission/neowise_diameters_albedos_V1_0",
+        "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/neowise_diameters_albedos_V1_0.zip",
+        "downloadSize": "6.1 MB",
+        "checksumUrl": null
+    },
+    "target": null,
+    "pds3": {
+        "name": "EAR_A_COMPIL_5_NEOWISEDIAM_V1_0",
+        "location": {
+            "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_NEOWISEDIAM_V1_0",
+            "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_NEOWISEDIAM_V1_0.zip",
+            "downloadSize": "6.0 MB"
+        }
+    },
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "collections": [
+        {
+            "id": "urn-nasa-pds-neowise_diameters_albedos-document",
+            "displayName": "document collection for the \"NEOWISE DIAMETERS AND ALBEDOS\" bundle",
+            "location": {
+                "downloadUrl": "#",
+                "downloadSize": null
+            }
+        },
+        {
+            "id": "urn-nasa-pds-neowise_diameters_albedos-data",
+            "displayName": "data collection for the \"NEOWISE DIAMETERS AND ALBEDOS\" bundle",
+            "location": {
+                "downloadUrl": "#",
+                "downloadSize": null
+            }
+        }
+    ]
+}

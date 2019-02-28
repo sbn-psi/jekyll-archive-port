@@ -16,6 +16,7 @@
         "downloadSize": "55 KB"
     },
     "alternateLocation": null,
+    "checksums": null,
     "pds3": {
         "name": "EAR-A-5-DDR-TAXONOMY-V6.0",
         "location": {
@@ -63,6 +64,32 @@
     ],
     "relatedTools": [],
     "relatedData": [],
+    "collections": [
+        {
+            "id": "",
+            "displayName": "Documents",
+            "location": {
+                "browseUrl": "",
+                "downloadUrl": "#",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Bundle Description",
+                "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy/document/bundle_description.txt"
+            }
+        },{ 
+            "id": "",
+            "displayName": "Data",
+            "location": {
+                "downloadUrl": "#",
+                "size": "350 KB"
+            },
+            "example": {
+                "name": "ASTEROID TAXONOMY",
+                "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy/data/taxonomy10.tab"
+            }
+        }
+    ],
     "publisher": {
         "name": "NASA Planetary Data System"
     }
