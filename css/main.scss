@@ -5,11 +5,6 @@ body {
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
 }
-a:not(.ignore-a-styling) {
-    color: $link;
-    // text-decoration: none;
-    // letter-spacing: 0.1em;
-}
 
 
 /* main */
@@ -83,7 +78,7 @@ h1 {
 
 main aside {
     float: right;
-    max-width: 40%;
+    max-width: 35%;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -94,10 +89,6 @@ main aside {
     }
 }
 
-.datum {
-    font-weight: bold;
-    margin-left: 1em;
-}
 .download-size {
     font-size: 0.7em;
 }
@@ -111,6 +102,14 @@ main aside {
     display: block;
     padding: 0 20px 0 20px;
     background-color: #EDEDED;
+    word-wrap: break-word;
+    p {
+        font-weight: bold;
+        .datum {
+            margin-left: 1em;
+            font-weight: normal;
+        }        
+    }
 }
 
 .related-references {
@@ -173,6 +172,7 @@ main aside {
     display: flex;
     flex-flow: row nowrap;
     font-style: italic;
+    color: $superDarkGrey;
     .citation {
         font-style: normal;
     }
@@ -306,16 +306,7 @@ table {
     }
 }
 
-.card {
-    padding: 1em;
-    margin-bottom: 1em;
-    border: 1px solid $grey;
-    box-shadow: 1px 1px 5px 0 #c6c6c6;
-    border-radius: 10px;
-}
-
 .dataset-collections {
-    // clear: both;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -345,12 +336,10 @@ table {
     justify-content: space-between;
     padding: 0.5em;
     border-top: 1px solid $lightGrey;
-    &:first-child {
-        border-top: unset;
-    }
     .header {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         .example:before {
             content: 'Inside: ';
             color: $darkGrey;
@@ -358,7 +347,9 @@ table {
     }
     .collection-title {
         font-size: 1.2em;
-        color: $link;
+    }
+    &:first-child {
+        border-top: none;
     }
     .actions {
         flex-grow: 1;
@@ -368,9 +359,95 @@ table {
         display: flex;
         flex-flow: row-reverse wrap;
         align-items: center;
-        img {
-            height: 2.5em;
+        a {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            text-align: center;
             margin: 0.5em;
+            img {
+                height: 2.5em;
+            }
+        }
+    }
+}
+
+.collection-container {
+    margin-left: 5px;
+    border-left: 8px solid $blue;
+    box-sizing: border-box;
+    padding: 20px;
+    h1, .collection-title {
+        text-align: left;
+        &::before {
+            content: " ";
+            display: block;
+            background: url("/images/icn-collection.png") no-repeat;
+            background-size: 1.5em;
+            width: 1.5em;
+            height: 1.5em;
+            float: left;
+            margin: 0 0.8em 0 0;
+        }
+    }
+    h1 {
+        margin-top: 0;
+        img {
+            display: none;
+        }
+    }
+    ~ .collection-container:not(:last-child), &:first-child {
+        border-bottom: none;
+    }
+}
+.bundle-container {
+    h1 {
+        border-bottom: 1px solid $grey;
+        line-height: 2em;
+        .image-container {
+            float: left;
+            img {
+                height: 1.7em;
+            }
+        }
+        .resource-title {
+            margin: 0 auto;
+        }
+    }
+}
+
+.clearfix:after {
+    content: " "; 
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+ .bundle-breadcrumb {
+    margin-left: 5px;
+
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex-shrink: 1;
+    align-items: center;
+    height: 75px;
+    // background-color: $blue;
+    // border-bottom: 8px solid $blue;
+    font-size: 1.2em;
+    a {
+        padding: 5px 15px;
+        // color: white;
+        height: 60px;
+        box-sizing: border-box;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        img {
+            max-height: 2em;
+            margin-right: 1em;
         }
     }
 }

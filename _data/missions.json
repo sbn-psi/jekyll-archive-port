@@ -13,5 +13,10 @@
         "url": "/dawn",
         "icon": "/images/dawn.png",
         "color": "#EF8922"
+    },
+    "NEOWISE": {
+        "url": "/resource/neowisediam.html",
+        "icon": "/images/dawn.png",
+        "color": "#72001A"
     }
 }

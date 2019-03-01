@@ -46,7 +46,7 @@
             "displayName": "document collection for the \"NEOWISE DIAMETERS AND ALBEDOS\" bundle",
             "location": {
                 "downloadUrl": "#",
-                "downloadSize": null
+                "downloadSize": "3 MB"
             }
         },
         {
@@ -54,7 +54,7 @@
             "displayName": "data collection for the \"NEOWISE DIAMETERS AND ALBEDOS\" bundle",
             "location": {
                 "downloadUrl": "#",
-                "downloadSize": null
+                "downloadSize": "3 MB"
             }
         }
     ]

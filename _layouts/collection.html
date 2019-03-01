@@ -4,12 +4,11 @@ layout: resource
 {% assign data = site.data.collections[page.dataset] %}
 
 <section class="dataset-quicklinks">
+    {% if data.example.size > 0 %}
+    <h3>Sample file:</h3>
+        <a href="{{data.example.url}}">{{ data.example.name }}</a>
+    {% endif %}
     <ul>
-        {% if data.example.size > 0 %}
-        <li>
-            <a href="{{data.example.url}}">{{ data.example.name }}</a>
-        </li>
-        {% endif %}
         {% if data.localDocumentsUrl %}
         <li>
             <a href="{{data.localDocumentsUrl}}">Local Documents</a>
