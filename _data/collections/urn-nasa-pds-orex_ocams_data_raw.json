@@ -1,0 +1,55 @@
+{
+    "lidvid": "urn:nasa:pds:orex.ocams:data_raw",
+    "name": "Raw science image data products",
+    "authorList": [
+        "Rizk, B.",
+        " Drouet d’Aubigny, C.",
+        " Golish, D.",
+        " DellaGiustina, D.N.",
+        " Lauretta, D.S."
+    ],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This collection contains the raw (processing level 0) science image data products produced by the OCAMS instrument onboard the OSIRIS-REx spacecraft.",
+    "citation": null,
+    "mission": "OSIRIS-REx",
+    "bundleId": "orex_ocams",
+    "localDocumentsUrl": null,
+    "otherInstrumentsUrl": "https://sbnarchivedemo.psi.edu/resource/orex",
+    "missionBundleUrl": "https://sbnarchivedemo.psi.edu/resource/orex/orexmission.html",
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_raw/",
+        "downloadUrl": null,
+        "downloadSize": null
+    },
+    "target": null,
+    "pds3": null,
+    "relatedTools": [],
+    "relatedData": [
+        {
+            "name": "Documents",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/docs.html"
+        },
+        {
+            "name": "Raw science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_raw.html"
+        },
+        {
+            "name": "Calibrated science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_calibrated.html"
+        },
+        {
+            "name": "Reduced science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_reduced.html"
+        }
+    ],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "example": {
+        "name": "20160919T162110S802_map_L0sscal_V000.fits",
+        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_raw/cruise_1/20160919T162110S802_map_L0sscal_V000.fits"
+    }
+}

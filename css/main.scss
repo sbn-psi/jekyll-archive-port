@@ -103,6 +103,10 @@ main aside {
     padding: 0 20px 0 20px;
     background-color: #EDEDED;
     word-wrap: break-word;
+    h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
     p {
         font-weight: bold;
         .datum {
@@ -226,6 +230,17 @@ main aside {
 #taxonomy {
     display: flex;
     flex-flow: row wrap;
+
+    // margin-top: -$main-padding;
+    // margin-left: -$main-padding;
+    // margin-right: -$main-padding;
+    // margin-bottom: 10px;
+    // padding: 12px 20px;
+    // background-color: $superDarkGrey;
+    // -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+    // -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+    // box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+    // color: white;
     
     .banner {
         height: 60px;
@@ -329,6 +344,9 @@ table {
             margin-top: 0.8em;
         }
     }
+    .collection-container {
+        padding: 12px 20px;
+    }
 }
 .collection {
     display: flex;
@@ -340,8 +358,7 @@ table {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .example:before {
-            content: 'Inside: ';
+        .example .file-label {
             color: $darkGrey;
         }
     }
@@ -376,7 +393,7 @@ table {
     margin-left: 5px;
     border-left: 8px solid $blue;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 0 0 20px;
     h1, .collection-title {
         text-align: left;
         &::before {
@@ -420,7 +437,7 @@ table {
     content: " "; 
     visibility: hidden;
     display: block;
-    height: 0;
+height: 0;
     clear: both;
  }
 
@@ -432,12 +449,9 @@ table {
     flex-shrink: 1;
     align-items: center;
     height: 75px;
-    // background-color: $blue;
-    // border-bottom: 8px solid $blue;
     font-size: 1.2em;
     a {
-        padding: 5px 15px;
-        // color: white;
+        padding-left: 4px;
         height: 60px;
         box-sizing: border-box;
         
@@ -445,9 +459,38 @@ table {
         flex-direction: row;
         align-items: center;
         
+    }
+    img {
+        max-height: 2em;
+        margin-right: 1em;
+    }
+}
+
+.dataset-quicklinks {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+    a {
+        margin: 0 1em;
+        min-width: 120px;
+        background-color:$link;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         img {
-            max-height: 2em;
-            margin-right: 1em;
+            height: 2em;
+            color: white;
+            margin-bottom: 0.5em;
         }
     }
 }

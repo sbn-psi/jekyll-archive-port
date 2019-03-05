@@ -14,6 +14,7 @@ layout: resource
     {% for collectionStub in data.collections %}
         {% assign collectionId = collectionStub.id %}
         {% assign collectionData = site.data.collections[collectionId] %}
+        {% assign collectionPost = null %}
         {% for post in site.posts %}
             {% if post.dataset == collectionId %}
                 {% assign collectionPost = post %}
@@ -27,6 +28,11 @@ layout: resource
 
                 {% if collectionData.example.size > 0 %}
                 <span class="example">
+                    {% if collectionData.isDocument %}
+                    <span class="file-label">Key Document:</span>
+                    {% else %}
+                    <span class="file-label">Example File:</span>
+                    {% endif %}
                     <a href="{{ collectionData.example.url }}">{{ collectionData.example.name }}</a>
                 </span>
                 {% endif %}

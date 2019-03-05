@@ -2,7 +2,7 @@
     "asteroid": {
         "displayName": "Asteroid Datasets",
         "contextualName": "All Asteroid Data",
-        "url": "/datasets#asteroid",
+        "url": "#",
         "type": "target"
     },
     "comet": {

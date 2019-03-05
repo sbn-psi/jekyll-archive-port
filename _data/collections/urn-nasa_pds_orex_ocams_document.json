@@ -1,0 +1,55 @@
+{
+    "lidvid": "urn:nasa:pds:orex.ocams:document",
+    "name": "Documents",
+    "authorList": [
+        "Rizk, B.",
+        " Drouet d’Aubigny, C.",
+        " Golish, D.",
+        " DellaGiustina, D.N.",
+        " Lauretta, D.S."
+    ],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This collection contains the documents applicable to the OSIRIS-REx Camera Suite (OCAMS).",
+    "citation": null,
+    "mission": "OSIRIS-REx",
+    "bundleId": "orex_ocams",
+    "localDocumentsUrl": null,
+    "otherInstrumentsUrl": "https://sbnarchivedemo.psi.edu/resource/orex",
+    "missionBundleUrl": "https://sbnarchivedemo.psi.edu/resource/orex/orexmission.html",
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/document/",
+        "downloadUrl": null,
+        "downloadSize": null
+    },
+    "target": null,
+    "pds3": null,
+    "relatedTools": [],
+    "relatedData": [
+        {
+            "name": "Calibration file collection",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/document.html"
+        },
+        {
+            "name": "Raw science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_raw.html"
+        },
+        {
+            "name": "Calibrated science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_calibrated.html"
+        },
+        {
+            "name": "Reduced science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_reduced.html"
+        }
+    ],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "example": {
+        "name": "Camera Suite Description",
+        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/document/ocams_inst_paper.pdf"
+    }
+}

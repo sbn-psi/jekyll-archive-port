@@ -3,26 +3,52 @@ layout: resource
 ---
 {% assign data = site.data.collections[page.dataset] %}
 
+{% if data.localDocumentsUrl %}
+<h3>&nbsp;</h3>
 <section class="dataset-quicklinks">
-    {% if data.example.size > 0 %}
-    <h3>Sample file:</h3>
-        <a href="{{data.example.url}}">{{ data.example.name }}</a>
+    <a href="{{data.localDocumentsUrl}}">View Local Documents</a>
+</section>
+{% endif %}
+
+{% if data.example.size > 0 %}
+    {% if data.isDocument %}
+    <h3>Key Document:</h3>
+    {% else %}
+    <h3>Example File:</h3>
     {% endif %}
+    <section class="dataset-quicklinks">
+        <a href="{{data.example.url}}">
+            {% if data.example.thumbnailUrl %}
+            <img src="{{data.example.thumbnailUrl}}">
+            {% else %}
+            <img src="/images/icn-file.png">
+            {% endif %}
+            {{ data.example.name }}
+        </a>
+    </section>
+{% endif %}
+
+{% if data.alternateLocations.size > 0 %}
+<h3>Download packages:</h3>
+<section class="dataset-downloads">
     <ul>
-        {% if data.localDocumentsUrl %}
-        <li>
-            <a href="{{data.localDocumentsUrl}}">Local Documents</a>
-        </li>
-        {% endif %}
-        {% if data.otherInstrumentsUrl %}
-        <li>
-            <a href="{{data.otherInstrumentsUrl}}">Other Instruments</a>
-        </li>
-        {% endif %}
-        {% if data.missionBundleUrl %}
-        <li>
-            <a href="{{data.missionBundleUrl}}">Mission Bundle</a>
-        </li>
-        {% endif %}
+        <li><a href="{{ data.location.downloadUrl }}"> <span> Download All {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span></a></li>
+        {% for alt in data.alternateLocations %}
+        <li><a href="{{ alt.downloadUrl }}"> <span> {{ alt.name }} {% if alt.downloadSize %} <span class="download-size">({{ alt.downloadSize }})</span> {% endif %}</span></a></li>
+        {% endfor %}
     </ul>
 </section>
+{% endif %}
+
+
+{% if data.otherInstrumentsUrl or data.missionBundleUrl %}
+<h3>More Information:</h3>
+<section class="dataset-quicklinks">
+{% if data.otherInstrumentsUrl %}
+    <a href="{{data.otherInstrumentsUrl}}">Other Instruments</a>
+{% endif %}
+{% if data.missionBundleUrl %}
+    <a href="{{data.missionBundleUrl}}">Mission Information Bundle</a>
+{% endif %}
+</section>
+{% endif %}

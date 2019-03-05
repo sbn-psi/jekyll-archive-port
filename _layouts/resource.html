@@ -11,6 +11,9 @@ layout: default
 {% assign target = site.data.targets[data.target.name] %}
 
 <div id="taxonomy">
+    {% if mission or target or page.tags.size > 0%}
+    <h3>Relevant Tags:</h3>
+    {% endif %}
     {% if mission %}
     <div class="mission banner" style="background-color: {{ mission.color }}">
         <a class="ignore-a-styling" href="{{ mission.url }}">
@@ -46,10 +49,8 @@ layout: default
         {% endif %}
     {% endfor %}
     <div class="bundle-breadcrumb">
-        <a class="ignore-a-styling" href="{{ bundlePost.permalink }}">
-            <img src="/images/icn-bundle.png">
-            <span>Part of {{ bundle.name }}</span>
-        </a>
+        <img src="/images/icn-bundle.png">
+        Part of <a class="ignore-a-styling" href="{{ bundlePost.permalink }}"><span>{{ bundle.name }}</span></a>
     </div>
 {% endif %}
 <div itemscope itemtype="https://schema.org/Dataset"
@@ -79,6 +80,11 @@ bundle-container
     
     <aside>
         <section class="dataset-metadata">
+            {% if page.layout == 'collection' %}
+            <h2>PDS4 Collection</h2>
+            {% elsif page.layout == 'bundle' %}
+            <h2>PDS4 Bundle</h2>
+            {% endif %}
             <p>Status: <br/>
                 {% if data.published %} <span class="datum">Published</span>
                 {% else %} <span class="datum">Accumulating</span>
@@ -91,11 +97,13 @@ bundle-container
             {% if data.lidvid %}<p>PDS4 ID: <br/><span class="datum">{{ data.lidvid }}</span></p>{% endif %}
             {% if data.doi %}<p>DOI:<br/> <span class="datum">{{ data.doi }}</span></p>{% endif %}
             
+            {% if data.authorList.size > 0 %}
             <p>Author(s):<br/>
                 {% for author in data.authorList %}
                 <span class="datum" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ author }}</span><br/>
                 {% endfor %}    
             </p>
+            {% endif %}
             
             <!-- Hidden data values-->
             <span class="datum" itemprop="provider" style="display:none" itemscope itemtype="http://schema.org/Organization">{{ data.provider.name }}</span>
@@ -133,52 +141,52 @@ bundle-container
         </section>
     {% endif %}
     
-    <div class="related-references">
-    {% if data.pds3.size > 0 %}
-        <section class="dataset-pds3">
-            <h3 class="header"> PDS3 versions of this dataset: </h3>
-            {{ data.pds3.name }}
-            <a href="{{ data.pds3.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
-            <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.downloadSize %} <span class="download-size">({{ data.pds3.location.downloadSize }})</span> {% endif %}</a>
+</div>
+<div class="related-references">
+{% if data.pds3.size > 0 %}
+    <section class="dataset-pds3">
+        <h3 class="header"> PDS3 versions of this dataset: </h3>
+        {{ data.pds3.name }}
+        <a href="{{ data.pds3.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
+        <a href="{{ data.pds3.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png"> {% if data.pds3.location.downloadSize %} <span class="download-size">({{ data.pds3.location.downloadSize }})</span> {% endif %}</a>
+    </section>
+{% endif %}
+{% if data.superseded.size > 0 %}
+    <section class="dataset-superseded">
+        <h3 class="header"> Superseded versions of this data set: </h3>
+        <ul>
+            {% for superseded in data.superseded %}
+            <li>
+                {{ superseded.name }}
+                <a href="{{ superseded.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
+                <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.downloadSize %} <span class="download-size">({{ superseded.location.downloadSize }})</span> {% endif %}</a>
+            </li>
+            {% endfor %}
+        </ul>
         </section>
-    {% endif %}
-    {% if data.superseded.size > 0 %}
-        <section class="dataset-superseded">
-            <h3 class="header"> Superseded versions of this data set: </h3>
-            <ul>
-                {% for superseded in data.superseded %}
-                <li>
-                    {{ superseded.name }}
-                    <a href="{{ superseded.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
-                    <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.downloadSize %} <span class="download-size">({{ superseded.location.downloadSize }})</span> {% endif %}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            </section>
-    {% endif %}
-    {% if data.relatedTools.size > 0 %}
-        <section class="dataset-related">
-            <h3 class="header"> Related Tools: </h3>
-            <ul>
-                {% for related in data.relatedTools %}
-                <li>
-                    <a href="{{ related.url }}">{{ related.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            </section>
-    {% endif %}
-    {% if data.relatedData.size > 0 %}
-        <section class="dataset-related">
-            <h3 class="header"> Related Datasets: </h3>
-            <ul>
-                {% for related in data.relatedData %}
-                <li>
-                    <a href="{{ related.url }}">{{ related.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-            </section>
-    {% endif %}
-    </div>
+{% endif %}
+{% if data.relatedTools.size > 0 %}
+    <section class="dataset-related">
+        <h3 class="header"> Related Tools: </h3>
+        <ul>
+            {% for related in data.relatedTools %}
+            <li>
+                <a href="{{ related.url }}">{{ related.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        </section>
+{% endif %}
+{% if data.relatedData.size > 0 %}
+    <section class="dataset-related">
+        <h3 class="header"> Related Datasets: </h3>
+        <ul>
+            {% for related in data.relatedData %}
+            <li>
+                <a href="{{ related.url }}">{{ related.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        </section>
+{% endif %}
 </div>

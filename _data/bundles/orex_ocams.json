@@ -48,74 +48,48 @@
     ],
     "collections": [
         { 
+            "id": "urn-nasa_pds_orex_ocams_document",
             "displayName": "Documents",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Camera Suite Description",
-                "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/document/ocams_inst_paper.pdf"
             }
         },{ 
             "displayName": "Raw housekeeping data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         },{ 
             "displayName": "Converted housekeeping data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         },{ 
             "displayName": "Calibration file collection",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams_data_raw",
             "displayName": "Raw science image data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         },{ 
             "displayName": "Calibrated science image data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         },{ 
             "displayName": "Reduced science image data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": "#"
             }
         }
     ],
