@@ -1,6 +1,7 @@
 {
     "lidvid": "urn:nasa:pds:orex.ocams:data_raw",
     "name": "Raw science image data products",
+    "isDocument": false,
     "authorList": [
         "Rizk, B.",
         " Drouet d’Aubigny, C.",

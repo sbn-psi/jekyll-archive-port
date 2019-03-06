@@ -72,10 +72,6 @@
                 "browseUrl": "",
                 "downloadUrl": "#",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Bundle Description",
-                "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy/document/bundle_description.txt"
             }
         },{ 
             "id": "",
@@ -83,10 +79,6 @@
             "location": {
                 "downloadUrl": "#",
                 "size": "350 KB"
-            },
-            "example": {
-                "name": "ASTEROID TAXONOMY",
-                "url": "https://sbnarchive.psi.edu/pds4/non_mission/ast_taxonomy/data/taxonomy10.tab"
             }
         }
     ],

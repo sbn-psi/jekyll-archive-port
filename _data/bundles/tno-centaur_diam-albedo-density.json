@@ -1,0 +1,87 @@
+{
+    "lidvid": "urn:nasa:pds:tno-centaur_diam-albedo-density::1.0",
+    "name": "TNO and Centaur Diameters, Albedos, and Densities",
+    "authorList": [
+        "Johnston, W. R."
+    ],
+    "doi": null,
+    "published": true,
+    "datePublished": "31 March 2018",
+    "humanDescription": null,
+    "abstract": null,
+    "citation": "Johnston, W. R., TNO AND CENTAUR DIAMETERS, ALBEDOS, AND DENSITIES V1.0. urn:nasa:pds:tno-centaur_diam-albedo-density::1.0. NASA Planetary Data System, 2018.",
+    "mission": null,
+    "delivery": null,
+    "location": {
+        "browseUrl": "http://sbnarchive.psi.edu/pds4/non_mission/tno-centaur_diam-albedo-density_V1_0",
+        "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/tno-centaur_diam-albedo-density_V1_0.zip",
+        "downloadSize": "52 KB",
+        "checksumUrl": null
+    },
+    "target": null,
+    "pds3": {
+        "name": "EAR-A-COMPIL-5-TNOCENALB-V4.0",
+        "location": {
+            "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V4_0",
+            "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V4_0.zip",
+            "downloadSize": "52 KB"
+        }
+    },
+    "superseded": [
+        {
+            "name": "EAR-A-COMPIL-5-TNOCENALB-V4.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V4_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V4_0.zip",
+                "downloadSize": "52 KB"
+            }
+        },
+        {
+            "name": "EAR-A-COMPIL-5-TNOCENALB-V3.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V3_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V3_0.zip",
+                "downloadSize": "52 KB"
+            }
+        },
+        {
+            "name": "EAR-A-COMPIL-5-TNOCENALB-V2.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V2_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V2_0.zip",
+                "downloadSize": "52 KB"
+            }
+        },
+        {
+            "name": "EAR-A-COMPIL-5-TNOCENALB-V1.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V1_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_COMPIL_5_TNOCENALB_V1_0.zip",
+                "downloadSize": "52 KB"
+            }
+        }
+    ],
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "collections": [
+        {
+            "id": "urn-nasa-pds-tno_centaur_diam_albedo_density-document",
+            "displayName": "Documents",
+            "location": {
+                "downloadUrl": "https://sbnarchive.psi.edu/pds4/non_mission/tno-centaur_diam-albedo-density_V1_0/document/collection_tno-centaur_diam-albedo-density_document.xml",
+                "downloadSize": "12 KB"
+            }
+        },
+        {
+            "id": "urn-nasa-pds-tno_centaur_diam_albedo_density-data",
+            "displayName": "Data",
+            "location": {
+                "downloadUrl": "https://sbnarchive.psi.edu/pds4/non_mission/tno-centaur_diam-albedo-density_V1_0/data/",
+                "downloadSize": "260 KB"
+            }
+        }
+    ]
+}

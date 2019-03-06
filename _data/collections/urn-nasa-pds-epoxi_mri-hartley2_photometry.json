@@ -1,6 +1,7 @@
 {
     "lidvid": "urn:nasa:pds:epoxi_mri:hartley2_photometry",
     "name": "EPOXI MRI-VIS 103P/Hartley 2 Encounter Photometry Collection",
+    "isDocument": false,
     "authorList": [
         "Womack, M.",
         " Curtis, A.",
@@ -22,6 +23,7 @@
     "citation": "Bodewits, D.; Farnham, T.; and A'Hearn, M., EPOXI MRI-VIS 103P/Hartley 2 Encounter Photometry Collection, urn:nasa:pds:epoxi_mri:hartley2_photometry::1.0, NASA Planetary Data System, 2018.",
     "mission": null,
     "delivery": null,
+    "bundleId": "epoxi_mri",
     "location": {
         "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri:hartley2_photometry-v1.0/",
         "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri:hartley2_photometry-v1.0/SUPPORT/DOWNLOAD/",
@@ -41,23 +43,15 @@
             "downloadSize": "13.9 MB"
         }
     },
-    "primaryLinks": [
-        
-    ],
     "relatedTools": [],
-    "relatedData": [
-        {
-            "name": "EPOXI MRI Observations Bundle",
-            "url": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri-v1.0/SUPPORT/dataset.html"
-        }
-    ],
+    "relatedData": [],
     "example": {
         "name": "Example File",
         "url": "#"
     },
-    "localDocumentsUrl": "#",
-    "otherInstrumentsUrl": "#",
-    "missionBundleUrl": "#",
+    "localDocumentsUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-epoxi_mri-v1.0/hartley2_photometry/document/",
+    "otherInstrumentsUrl": null,
+    "missionBundleUrl": null,
     "publisher": {
         "name": "NASA Planetary Data System"
     }

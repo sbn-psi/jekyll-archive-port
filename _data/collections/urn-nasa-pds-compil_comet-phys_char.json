@@ -1,0 +1,44 @@
+{
+    "lidvid": "urn:nasa:pds:compil-comet:phys_char::1.0",
+    "name": "Physical Characteristics of Comets",
+    "authorList": [],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": " This dataset is a compilation of observational measurements on comet morphology and magnitude covering just over a thousand apparitions of various comets from -466 to 1975. These data were migrated from the PDS3 dataset EAR-C-5-DDR-PCC-V1.0. For migration, the data files were left untouched and the information in the PDS3 labels was translated into PDS4 format and augmented with additional metadata; the reference list file was converted to a document product; and the PDS3 data set catalog file was edited and updated to create the description document.",
+    "citation": "Vsekhsvyatskii, S. K.; Raugh, A. C.; and A'Hearn, M.; Physical Characteristics of Comets (PDS4 Format), urn:nasa:pds:compil-comet:phys_char::1.0; NASA Planetary Data System, 2019.",
+    "mission": null,
+    "bundleId": "compil-comet",
+    "exampleThumbnailUrl": null,
+    "localDocumentsUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/phys_char/document/",
+    "otherInstrumentsUrl": null,
+    "missionBundleUrl": null,
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/phys_char/",
+        "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/phys_char/SUPPORT/DOWNLOAD/",
+        "downloadSize": "37.9 KB",
+        "checksumUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/phys_char/SUPPORT/CHECKSUM/current.md5"
+    },
+    "target": null,
+    "pds3": {
+        "name": "EAR-C-5-DDR-PCC-V1.0",
+        "location": {
+            "browseUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-5-ddr-pcc-v1.0/",
+            "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-5-ddr-pcc-v1.0/DOWNLOAD/",
+            "downloadSize": "62.6 KB"
+        }
+    },
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "isDocument": false,
+    "example": {
+        "name": "Example File",
+        "url": "#",
+        "thumbnailUrl": null
+    },
+    "alternateLocations": []
+}

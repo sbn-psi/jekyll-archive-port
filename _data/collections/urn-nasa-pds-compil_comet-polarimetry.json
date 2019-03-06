@@ -1,0 +1,44 @@
+{
+    "lidvid": "urn:nasa:pds:compil-comet:polarimetry::1.0",
+    "name": "Compilation of Comet Polarimetry from Published and Unpublished Sources",
+    "authorList": [],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This collection presents comet polarimetry results collected and tabulated from both published literature and unpublished sources",
+    "citation": "Kiselev, N.; Shubina, E.; Velichko, S.; Jockers, K.; Rosenbush, V.; and Kikuchi, S. (eds.); Compilation of Comet Polarimetry from Published and Unpublished Sources, urn:nasa:pds:compil-comet:polarimetry::1.0, NASA Planetary Data System, 2017.",
+    "mission": null,
+    "bundleId": "compil-comet",
+    "exampleThumbnailUrl": null,
+    "localDocumentsUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/polarimetry/document/",
+    "otherInstrumentsUrl": null,
+    "missionBundleUrl": null,
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/polarimetry/",
+        "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/polarimetry/SUPPORT/DOWNLOAD/",
+        "downloadSize": "80.5 KB",
+        "checksumUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/polarimetry/SUPPORT/CHECKSUM/current.md5"
+    },
+    "target": null,
+    "pds3": {
+        "name": "EAR-C-COMPIL-5-DB-COMET-POLARIMETRY-V1.0",
+        "location": {
+            "browseUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-compil-5-db-comet-polarimetry-v1.0/",
+            "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-compil-5-db-comet-polarimetry-v1.0/DOWNLOAD/",
+            "downloadSize": "65.9 KB"
+        }
+    },
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "isDocument": false,
+    "example": {
+        "name": "Example File",
+        "url": "#",
+        "thumbnailUrl": null
+    },
+    "alternateLocations": []
+}

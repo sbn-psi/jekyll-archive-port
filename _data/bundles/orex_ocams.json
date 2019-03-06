@@ -48,25 +48,28 @@
     ],
     "collections": [
         { 
-            "id": "urn-nasa_pds_orex_ocams_document",
+            "id": "urn-nasa-pds-orex_ocams-document",
             "displayName": "Documents",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams-data_hkl0",
             "displayName": "Raw housekeeping data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams-data_hkl1",
             "displayName": "Converted housekeeping data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams-calibration",
             "displayName": "Calibration file collection",
             "location": {
                 "downloadUrl": "#",
@@ -80,12 +83,14 @@
                 "size": "3 MB"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams-data_calibrated",
             "displayName": "Calibrated science image data products",
             "location": {
                 "downloadUrl": "#",
                 "size": "3 MB"
             }
         },{ 
+            "id": "urn-nasa-pds-orex_ocams-data_reduced",
             "displayName": "Reduced science image data products",
             "location": {
                 "downloadUrl": "#",

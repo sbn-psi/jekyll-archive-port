@@ -44,74 +44,46 @@
     "relatedTools": [],
     "collections": [
         { 
-            "name": "Documents",
+            "displayName": "Documents",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Camera Suite Description",
-                "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/document/ocams_inst_paper.pdf"
             }
         },{ 
-            "name": "Raw housekeeping data products",
+            "displayName": "Raw housekeeping data products",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         },{ 
-            "name": "Converted housekeeping data products",
+            "displayName": "Converted housekeeping data products",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         },{ 
-            "name": "Calibration file collection",
+            "displayName": "Calibration file collection",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         },{ 
-            "name": "Raw science image data products",
+            "displayName": "Raw science image data products",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         },{ 
-            "name": "Calibrated science image data products",
+            "displayName": "Calibrated science image data products",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         },{ 
-            "name": "Reduced science image data products",
+            "displayName": "Reduced science image data products",
             "location": {
                 "downloadUrl": "",
                 "size": "3 MB"
-            },
-            "example": {
-                "name": "Example File",
-                "url": ""
             }
         }
     ],

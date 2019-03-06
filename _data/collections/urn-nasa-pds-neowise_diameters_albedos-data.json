@@ -1,6 +1,7 @@
 {
     "lidvid": "urn:nasa:pds:neowise_diameters_albedos:data",
     "name": "data collection for the \"NEOWISE DIAMETERS AND ALBEDOS\" bundle",
+    "isDocument": false,
     "authorList": [],
     "published": true,
     "datePublished": "2016",

@@ -1,0 +1,169 @@
+{
+    "lidvid": "urn:nasa:pds:smallbodiesoccultations::2.0",
+    "name": "Asteroid Occultations",
+    "authorList": [
+        "Herald, D., Dunham, D.W., Frappa, E., Hayamizu, T., Kerr, S., and Timerson, B."
+    ],
+    "doi": null,
+    "published": true,
+    "datePublished": "2017",
+    "humanDescription": null,
+    "abstract": "This data set is intended to include all reported timings of observed asteroid, planet, and planetary satellite occultation events as well as occultation axes derived from those timings made by observers from around the world. This version is complete through the end of 2017.",
+    "citation": null,
+    "mission": null,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations_V2_0/",
+        "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations_V2_0.zip",
+        "downloadSize": "5 MB",
+        "checksumUrl": null
+    },
+    "target": null,
+    "pds3": null,
+    "superseded": [
+        {
+            "name": "urn:nasa:pds:smallbodiesoccultations::1.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations.zip",
+                "downloadSize": "14 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V14.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V14_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V14_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V13.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V13_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V13_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V12.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V12_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V12_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V11.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V11_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V11_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V10.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V10_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V10_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V9.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V9_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V9_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V8.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V8_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V8_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V7.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V7_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V7_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V6.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V6_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V6_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V5.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V5_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V5_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V4.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V4_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V4_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V3.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V3_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V3_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V2.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V2_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V2_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+        {
+            "name": "EAR-A-3-RDR-OCCULTATIONS-V1.0",
+            "location": {
+                "browseUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V1_0",
+                "downloadUrl": "http://sbnarchive.psi.edu/pds3/non_mission/EAR_A_3_RDR_OCCULTATIONS_V1_0.zip",
+                "downloadSize": "15 MB"
+            }
+        },
+    ],
+    
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "collections": [
+        {
+            "id": "urn-nasa-pds-smallbodiesoccultations-document",
+            "displayName": "Documents",
+            "location": {
+                "downloadUrl": "https://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations_V2_0/document/",
+                "downloadSize": "4.9 MB"
+            }
+        },
+        {
+            "id": "urn-nasa-pds-smallbodiesoccultations-data",
+            "displayName": "Data",
+            "location": {
+                "downloadUrl": "https://sbnarchive.psi.edu/pds4/non_mission/smallbodiesoccultations_V2_0/data/",
+                "downloadSize": "4.8 MB"
+            }
+        }
+    ]
+}

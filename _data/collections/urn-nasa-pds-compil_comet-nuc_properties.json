@@ -1,0 +1,44 @@
+{
+    "lidvid": "urn:nasa:pds:compil-comet:nuc_properties::1.0",
+    "name": "Properties of Comet Nuclei",
+    "authorList": [],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This collection contains size, shape, albedo and color data for various comets collected from the literature. These data were migrated from the PDS3 dataset EAR-C-COMPIL-5-COMET-NUC-PROPERTIES-V2.0, Properties of Comet Nuclei.",
+    "citation": "Barnes, T.F., A'Hearn, M.F., and Kolokolova, L. (Eds.), Properties of Comet Nuclei (PDS4 Format), urn:nasa:pds:compil-comet:nuc_properties::1.0, NASA Planetary Data System, 2019.",
+    "mission": null,
+    "bundleId": "compil-comet",
+    "exampleThumbnailUrl": null,
+    "localDocumentsUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/nuc_properties/document/",
+    "otherInstrumentsUrl": null,
+    "missionBundleUrl": null,
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/nuc_properties/",
+        "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/nuc_properties/SUPPORT/DOWNLOAD/",
+        "downloadSize": "34.7 KB",
+        "checksumUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/nuc_properties/SUPPORT/CHECKSUM/current.md5"
+    },
+    "target": null,
+    "pds3": {
+        "name": "EAR-C-COMPIL-5-COMET-NUC-PROPERTIES-V1.0",
+        "location": {
+            "browseUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-compil-5-comet-nuc-properties-v1.0/",
+            "downloadUrl": "https://pdssbn.astro.umd.edu/holdings/ear-c-compil-5-comet-nuc-properties-v1.0/DOWNLOAD/",
+            "downloadSize": "42.4 KB"
+        }
+    },
+    "relatedTools": [],
+    "relatedData": [],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "isDocument": false,
+    "example": {
+        "name": "Example File",
+        "url": "#",
+        "thumbnailUrl": null
+    },
+    "alternateLocations": []
+}

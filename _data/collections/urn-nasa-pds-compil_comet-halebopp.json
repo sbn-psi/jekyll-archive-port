@@ -1,6 +1,7 @@
 {
     "lidvid": " urn:nasa:pds:compil-comet:halebopp",
     "name": "Hale-Bopp Visual Lightcurve",
+    "isDocument": false,
     "authorList": [
         "Womack, M.",
         " Curtis, A.",
@@ -29,27 +30,22 @@
         "checksumUrl" : "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet:halebopp-v1.0/SUPPORT/CHECKSUM/current.md5",
         "downloadSize": "919.5 KB"
     },
+    "alternateLocations": [],
     "target": {
         "name": "C/1995 O1 (Hale-Bopp)",
         "type": "Comet"
     },
     "pds3": null,
     "relatedTools": [],
-    "relatedData": [
-        {
-            "name": "Comet Data Compilations from Published Sources",
-            "url": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet-v1.0/SUPPORT/dataset.html"
-        }
-
-    ],
+    "relatedData": [],
     "example": {
         "name": "Example File",
         "url": "#"
     },
-    "localDocumentsUrl": "#",
-    "otherInstrumentsUrl": "#",
-    "missionBundleUrl": "#",
-    "bundleId": "",
+    "localDocumentsUrl": "https://pdssbn.astro.umd.edu/holdings/pds4-compil-comet:halebopp-v1.0/document/",
+    "otherInstrumentsUrl": null,
+    "missionBundleUrl": null,
+    "bundleId": "compil-comet",
     "publisher": {
         "name": "NASA Planetary Data System"
     }
