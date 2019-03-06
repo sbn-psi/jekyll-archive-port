@@ -3,45 +3,62 @@ layout: resource
 ---
 {% assign data = site.data.collections[page.dataset] %}
 
-{% if data.localDocumentsUrl %}
-<h3>&nbsp;</h3>
 <section class="dataset-quicklinks">
-    <a href="{{data.localDocumentsUrl}}">View Local Documents</a>
-</section>
-{% endif %}
-
-{% if data.example.size > 0 %}
-    {% if data.isDocument %}
-    <h3>Key Document:</h3>
-    {% else %}
-    <h3>Example File:</h3>
+    {% if data.localDocumentsUrl %}
+    <div>
+        <h3>View Local Documents</h3>
+        <a href="{{data.localDocumentsUrl}}">
+            <img src="/images/icn-documents.png">
+            <span>View Local Documents</span>
+        </a>
+    </div>
     {% endif %}
-    <section class="dataset-quicklinks">
+    {% if data.example.size > 0 %}
+    <div>
+        {% if data.isDocument %}
+        <h3>Key Document</h3>
+        {% else %}
+        <h3>Example File</h3>
+        {% endif %}
+        
         <a href="{{data.example.url}}">
             {% if data.example.thumbnailUrl %}
             <img src="{{data.example.thumbnailUrl}}">
             {% else %}
             <img src="/images/icn-file.png">
             {% endif %}
-            {{ data.example.name }}
+            <span>{{ data.example.name }}</span>
         </a>
-    </section>
-{% endif %}
+    </div>
+    {% endif %}
+</section>
+
+
 
 {% if data.alternateLocations.size > 0 %}
 <h3>Download packages:</h3>
 <section class="dataset-downloads">
     <ul>
-        <li><a href="{{ data.location.downloadUrl }}"> <span> Download All {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span></a></li>
+        <li>
+            <img src="/images/icn-package.png">
+            <a href="{{ data.location.downloadUrl }}"> 
+                <span> Download All {% if data.location.downloadSize %} <span class="download-size">({{ data.location.downloadSize }})</span> {% endif %}</span>
+            </a>
+        </li>
         {% for alt in data.alternateLocations %}
-        <li><a href="{{ alt.downloadUrl }}"> <span> {{ alt.name }} {% if alt.downloadSize %} <span class="download-size">({{ alt.downloadSize }})</span> {% endif %}</span></a></li>
+        <li>
+            <img src="/images/icn-package.png">
+            <a href="{{ alt.downloadUrl }}">
+                <span> {{ alt.name }} {% if alt.downloadSize %} <span class="download-size">({{ alt.downloadSize }})</span> {% endif %}</span>
+            </a>
+        </li>
         {% endfor %}
     </ul>
 </section>
 {% endif %}
 
 
-{% if data.otherInstrumentsUrl or data.missionBundleUrl %}
+<!-- {% if data.otherInstrumentsUrl or data.missionBundleUrl %}
 <h3>More Information:</h3>
 <section class="dataset-quicklinks">
 {% if data.otherInstrumentsUrl %}
@@ -51,4 +68,4 @@ layout: resource
     <a href="{{data.missionBundleUrl}}">Mission Information Bundle</a>
 {% endif %}
 </section>
-{% endif %}
+{% endif %} -->

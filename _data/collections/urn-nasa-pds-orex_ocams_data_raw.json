@@ -51,6 +51,7 @@
     },
     "example": {
         "name": "20160919T162110S802_map_L0sscal_V000.fits",
-        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_raw/cruise_1/20160919T162110S802_map_L0sscal_V000.fits"
+        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_raw/cruise_1/20160919T162110S802_map_L0sscal_V000.fits",
+        "thumbnailUrl": "/images/examples/cb3v2-q0e0q.jpg"
     }
 }

@@ -48,9 +48,19 @@ layout: default
             {% assign bundlePost = post %}
         {% endif %}
     {% endfor %}
-    <div class="bundle-breadcrumb">
+    <div class="family-links">
         <img src="/images/icn-bundle.png">
         Part of <a class="ignore-a-styling" href="{{ bundlePost.permalink }}"><span>{{ bundle.name }}</span></a>
+        {% if data.otherInstrumentsUrl or data.missionBundleUrl %}
+        <div>
+            {% if data.otherInstrumentsUrl %}
+                <a class="big-ugly-button" href="{{data.otherInstrumentsUrl}}">Other Instruments</a>
+            {% endif %}
+            {% if data.missionBundleUrl %}
+                <a class="big-ugly-button" href="{{data.missionBundleUrl}}">Mission Information Bundle</a>
+            {% endif %}
+        </div>
+        {% endif %}
     </div>
 {% endif %}
 <div itemscope itemtype="https://schema.org/Dataset"
@@ -126,8 +136,9 @@ bundle-container
     {% endif %}
     
     
-    
+    <!-- Bundle/Collection-specific content start -->
     {{ content }}
+    <!-- Bundle/Collection-specific content end -->
     
     
     {% if data.citation %}
