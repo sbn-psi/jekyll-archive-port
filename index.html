@@ -10,7 +10,9 @@ layout: default
 
 <h2>Select data by data type:</h2>
 <ul>
-{% for tag in site.tags %}
+{% assign sorted_tags = site.tags | sort: tag[0] %}
+
+{% for tag in sorted_tags %}
     {% assign tagName = tag[0] %}
     {% assign tagData = site.data.tags[tagName] %}
     {% if tagData.type == 'data' %}
@@ -21,7 +23,7 @@ layout: default
 
 <h2> Select data by target type: </h2>
 <ul>
-{% for tag in site.tags %}
+{% for tag in sorted_tags %}
     {% assign tagName = tag[0] %}
     {% assign tagData = site.data.tags[tagName] %}
     {% if tagData.type == 'target' %}
