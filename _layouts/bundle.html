@@ -14,17 +14,17 @@ layout: resource
     {% for collectionStub in data.collections %}
         {% assign collectionId = collectionStub.id %}
         {% assign collectionData = site.data.collections[collectionId] %}
-        {% assign collectionPost = null %}
-        {% for post in site.posts %}
-            {% if post.dataset == collectionId %}
-                {% assign collectionPost = post %}
+        {% assign collectionPage = null %}
+        {% for datasetPage in site.datasets %}
+            {% if datasetPage.dataset == collectionId %}
+                {% assign collectionPage = datasetPage %}
             {% endif %}
         {% endfor %}
         <div class="collection collection-container">
             <div class="header">
-                {% if collectionPost %} <a href="{{ collectionPost.permalink }}"> {% endif %}
+                {% if collectionPage %} <a href="{{ collectionPage.permalink }}"> {% endif %}
                 <span class="collection-title" title="Collection Title">{{collectionStub.displayName}}</span>
-                {% if collectionPost %} </a> {% endif %}
+                {% if collectionPage %} </a> {% endif %}
 
                 {% if collectionData.example.size > 0 %}
                 <span class="example">

@@ -10,11 +10,10 @@ layout: default
 
 <h2>Select data by data type:</h2>
 <ul>
-{% assign sorted_tags = site.tags | sort: tag[0] %}
+{% assign sorted_tags = site.datasets | map: 'tags' | uniq | sort %} 
 
 {% for tag in sorted_tags %}
-    {% assign tagName = tag[0] %}
-    {% assign tagData = site.data.tags[tagName] %}
+    {% assign tagData = site.data.tags[tag] %}
     {% if tagData.type == 'data' %}
     <li><a href="{{tagData.url}}">{{ tagData.contextualName }}</a></li>
     {% endif %}
@@ -24,8 +23,7 @@ layout: default
 <h2> Select data by target type: </h2>
 <ul>
 {% for tag in sorted_tags %}
-    {% assign tagName = tag[0] %}
-    {% assign tagData = site.data.tags[tagName] %}
+    {% assign tagData = site.data.tags[tag] %}
     {% if tagData.type == 'target' %}
     <li><a href="{{tagData.url}}">{{ tagData.contextualName }}</a></li>
     {% endif %}

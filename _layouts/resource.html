@@ -43,14 +43,14 @@ layout: default
 {% if data.bundleId %}
     {% assign bundleId = data.bundleId %}
     {% assign bundle = site.data.bundles[bundleId] %}
-    {% for post in site.posts %}
-        {% if post.dataset == bundleId %}
-            {% assign bundlePost = post %}
+    {% for datasetPage in site.datasets %}
+        {% if datasetPage.dataset == bundleId %}
+            {% assign bundlePage = datasetPage %}
         {% endif %}
     {% endfor %}
     <div class="family-links">
         <img src="/images/icn-bundle.png">
-        Part of <a class="ignore-a-styling" href="{{ bundlePost.permalink }}"><span>{{ bundle.name }}</span></a>
+        Part of <a class="ignore-a-styling" href="{{ bundlePage.permalink }}"><span>{{ bundle.name }}</span></a>
         {% if data.otherInstrumentsUrl or data.missionBundleUrl %}
         <div>
             {% if data.otherInstrumentsUrl %}
