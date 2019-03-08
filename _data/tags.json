@@ -2,43 +2,43 @@
     "asteroid": {
         "displayName": "Asteroid Datasets",
         "contextualName": "All Asteroid Data",
-        "url": "#",
+        "url": "/datasets/#asteroid",
         "type": "target"
     },
     "comet": {
         "displayName": "Comet Datasets",
         "contextualName": "All Comet Data",
-        "url": "/datasets#comet",
+        "url": "/datasets/#comet",
         "type": "target"
     },
     "image": {
         "displayName": "Image Datasets",
         "contextualName": "Image Data",
-        "url": "/datasets#image",
+        "url": "/datasets/#image",
         "type": "data"
     },
     "spectra": {
         "displayName": "Spectra Datasets",
         "contextualName": "Spectrophotometry and Spectra",
-        "url": "/datasets#spectra",
+        "url": "/datasets/#spectra",
         "type": "data"
     },
     "physicalProperties": {
         "contextualName": "Physical Properties, including spin vectors, taxonomic classification, albedos, densities, and diameters",
         "displayName": "Physical Properties Datasets",
-        "url": "/datasets#physicalProperties",
+        "url": "/datasets/#physicalProperties",
         "type": "data"
     },
     "lightcurve": {
         "contextualName": "Lightcurves",
         "displayName": "Lightcurve Datasets",
-        "url": "/datasets#lightcurve",
+        "url": "/datasets/#lightcurve",
         "type": "data"
     },
     "photometry": {
         "contextualName": "Photometry",
         "displayName": "Photometry Datasets",
-        "url": "/datasets#photometry",
+        "url": "/datasets/#photometry",
         "type": "data"
     }
     

@@ -4,4 +4,5 @@ permalink: /resource/orex/ocams.html
 layout: bundle
 dataset: 'orex_ocams'
 tags: [asteroid, image]
+resource: true
 ---

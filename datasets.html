@@ -5,13 +5,15 @@ layout: default
 ---
 
 {% assign tags = site.datasets | map: 'tags' | uniq | sort %} 
+{% assign datasets = site.datasets | sort: 'title' %} 
+
 {% for tag in tags %}
   {% assign tagData = site.data.tags[tag] %}
   <div id="{{tag}}" class="tag-dataset">
     <h2>{{ tagData.displayName }}</h2>
     <ul>
-      {% for dataset in site.datasets %}
-        {% if dataset.tags contains tag %}
+      {% for dataset in datasets %}
+        {% if dataset.resource and dataset.tags contains tag %}
         <li><a href="{{ dataset.url }}">{{ dataset.title }}</a></li>
         {% endif %}
       {% endfor %}

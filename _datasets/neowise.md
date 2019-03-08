@@ -5,4 +5,5 @@ layout: bundle
 dataset: 'neowise_diameters_albedos'
 mission: NEOWISE
 tags: [physicalProperties]
+resource: true
 ---
