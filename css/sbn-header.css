@@ -28,9 +28,12 @@
     justify-content: center;
     align-items: center;
 }
-.nasa-logo {
+.pds-logo {
+    background: radial-gradient(rgb(116, 166, 223) 0%, transparent 75%);
+    padding: 0.5em;
+}
+.pds-logo img {
     height: 3em;
-    background-color: #000;
 }
 .sbn-title-container {
     background-color: #000;   
