@@ -11,6 +11,33 @@
         "url": "/datasets/#comet",
         "type": "target"
     },
+    "NEO": {
+        "displayName": "Near-Earth Object Datasets",
+        "contextualName": "All NEO Data",
+        "url": "/datasets/#NEO",
+        "type": "target",
+        "parent": "asteroid"
+    },
+    "PHA": {
+        "displayName": "Potentially Hazardous Object Datasets",
+        "contextualName": "All PHA Data",
+        "url": "/datasets/#PHA",
+        "type": "target",
+        "parent": "asteroid"
+    },
+    "Apollo": {
+        "displayName": "Apollo asteroid Datasets",
+        "contextualName": "All Apollo Asteroid Data",
+        "url": "/datasets/#apollo",
+        "type": "target",
+        "parent": "asteroid"
+    },
+    "Orbiter": {
+        "displayName": "Orbiter Datasets",
+        "contextualName": "Orbiter Data",
+        "url": "/datasets/#orbiter",
+        "type": "mission"
+    },
     "image": {
         "displayName": "Image Datasets",
         "contextualName": "Image Data",
@@ -41,5 +68,4 @@
         "url": "/datasets/#photometry",
         "type": "data"
     }
-    
 }

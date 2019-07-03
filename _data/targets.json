@@ -1,6 +1,30 @@
 {
     "(101955) Bennu": {
-        "url": "/bennu",
-        "icon": "/images/bennu.jpg"
+        "major": true,
+        "url": "/target/bennu/",
+        "icon": "/images/bennu.jpg",
+        "description": "Hi from bennu",
+        "missions": ["OSIRIS-REx"],
+        "tags": ["NEO", "PHA", "Apollo"],
+        "relatedTargets": [
+            {
+                "name": "Jupiter",
+                "relationship": "parent"
+            }
+        ]
+    },
+    "Jupiter": {
+        "major": true,
+        "url": "/target/jupiter/",
+        "icon": "/images/jupiter.jpg",
+        "description": "Hi from jupiter",
+        "missions": [],
+        "tags": ["Planet"],
+        "relatedTargets": [
+            {
+                "name": "(101955) Bennu",
+                "relationship": "child"
+            }
+        ]
     }
 }

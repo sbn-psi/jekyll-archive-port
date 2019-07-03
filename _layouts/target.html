@@ -1,0 +1,85 @@
+---
+layout: default
+---
+{% assign target = site.data.targets[page.target] %}
+{% assign parentTarget = target.relatedTargets | where:"relationship", "parent" %} 
+{% assign childTargets = target.relatedTargets | where:"relationship", "child" %} 
+{% assign associatedTargets = target.relatedTargets | where:"relationship", "associated" %} 
+
+
+<div id="taxonomy">
+    <h3>Relevant Tags:</h3>
+    {% for tag in target.tags %}
+    <div class="banner">
+        {% assign tagData = site.data.tags[tag] %}
+        <a class="ignore-a-styling" href="{{ tagData.url }}">
+            <span> {% if tagData.displayName.size > 0 %} {{ tagData.displayName }} {% else %} {{ tag }} {% endif %} </span>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="target-header">
+    <img src="{{ target.icon }}">
+    <h1> {{ page.target }} Data Archive </h1>
+</div>
+
+<aside>
+    <section class="dataset-metadata">
+        <h2>Related Targets:</h2>
+        
+        {% for related in parentTarget %}
+        {% include related-target.html target=related.name %}
+        {% endfor %}
+        {% for related in childTargets %}
+        {% include related-target.html target=related.name %}
+        {% endfor %}
+        {% for related in associatedTargets %}
+        {% include related-target.html target=related.name %}
+        {% endfor %}
+
+        <h2>Missions:</h2>
+        {% for missionName in target.missions %}
+        {% assign mission = site.data.missions[missionName] %}
+        <p>
+            <a class="ignore-a-styling" href="{{ mission.url }}"> {{ missionName }}</a>
+        </p>
+        {% endfor %}
+    </section>
+</aside>
+<h3 itemprop="description" class="resource-description">{{ target.description }}</h3>
+
+{% assign allMissions = site.data.missions %}
+
+<h2>Datasets:</h2>
+<table>
+    <thead>
+        <th>Mission</th>
+        <th>Data type</th>
+        <th>Datasets</th>
+    </thead><tbody>
+        {% for mission in allMissions %}
+        <tr>
+            {% assign datasets = site.datasets | where: "resource" | sort %}
+            {% assign dataTypes = datasets | map: 'tags' | uniq %}
+
+            {% capture datasetData %}
+            
+            {% endcapture}
+
+            {% assign datasets = datasetData | split:','}
+        </tr>
+        {% assign tagData = site.data.tags[tag] %}
+        <div id="{{tag}}" class="tag-dataset">
+            <h2>{{ tagData.displayName }}</h2>
+            <ul>
+            {% for dataset in datasets %}
+                {% if dataset.resource and dataset.tags contains tag %}
+                <li><a href="{{ dataset.url }}">{{ dataset.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div> 
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+{% assign RTtarget = site.data.targets[include.target] %}
+
+<p>
+    <a class="ignore-a-styling" href="{{ RTtarget.url }}"> {{ include.target }}</a>
+    {% if RTtarget.major %}
+    <span>(Major)</span>
+    {% else %}
+    <span>(Minor)</span>
+    {% endif %}
+</p>

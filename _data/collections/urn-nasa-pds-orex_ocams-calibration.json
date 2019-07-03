@@ -1,1 +1,56 @@
-{"lidvid":"urn:nasa:pds:orex.ocams:calibration","name":"OSIRIS-REx OCAMS calibration file collection","authorList":["Rizk, B."," Drouet d’Aubigny, C."," Golish, D."," DellaGiustina, D.N."," Lauretta, D.S."],"datePublished":null,"humanDescription":null,"abstract":"This collection contains the calibration files used to calibrate and correct the images acquired by the OCAMS instrument onboard the OSIRIS-REx spacecraft","citation":null,"mission":"OSIRIS-REx","bundleId":"orex_ocams","exampleThumbnailUrl":null,"localDocumentsUrl":null,"otherInstrumentsUrl":"https://sbnarchivedemo.psi.edu/resource/orex","missionBundleUrl":"https://sbnarchivedemo.psi.edu/resource/orex/orexmission.html","published":false,"delivery":null,"location":{"browseUrl":"https://sbnarchive.psi.edu/pds4/orex/orex.ocams/calibration/","downloadUrl":"#","downloadSize":null,"checksumUrl":null},"target":null,"pds3":null,"relatedTools":[],"relatedData":[{"name":"OSIRIS-REx OCAMS Documents","url":"/resource/orex/ocams/documents.html"},{"name":"OSIRIS-REx OCAMS Raw science image data products","url":"https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_raw.html"},{"name":"OSIRIS-REx OCAMS Calibrated science image data products","url":"/resource/orex/ocams/data_calibrated.html"},{"name":"OSIRIS-REx OCAMS Reduced science image data products","url":"/resource/orex/ocams/data_reduced.html"}],"publisher":{"name":"NASA Planetary Data System"},"isDocument":false,"example":null,"alternateLocations":[]}
+{
+    "lidvid": "urn:nasa:pds:orex.ocams:calibration",
+    "name": "OSIRIS-REx OCAMS calibration file collection",
+    "authorList": [
+        "Rizk, B.",
+        " Drouet d’Aubigny, C.",
+        " Golish, D.",
+        " DellaGiustina, D.N.",
+        " Lauretta, D.S."
+    ],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This collection contains the calibration files used to calibrate and correct the images acquired by the OCAMS instrument onboard the OSIRIS-REx spacecraft",
+    "citation": null,
+    "mission": "OSIRIS-REx",
+    "bundleId": "orex_ocams",
+    "exampleThumbnailUrl": null,
+    "localDocumentsUrl": null,
+    "otherInstrumentsUrl": "https://sbnarchivedemo.psi.edu/resource/orex",
+    "missionBundleUrl": "https://sbnarchivedemo.psi.edu/resource/orex/orexmission.html",
+    "published": false,
+    "delivery": null,
+    "location": {
+        "browseUrl": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/calibration/",
+        "downloadUrl": "#",
+        "downloadSize": null,
+        "checksumUrl": null
+    },
+    "target": null,
+    "pds3": null,
+    "relatedTools": [],
+    "relatedData": [
+        {
+            "name": "OSIRIS-REx OCAMS Documents",
+            "url": "/resource/orex/ocams/documents.html"
+        },
+        {
+            "name": "OSIRIS-REx OCAMS Raw science image data products",
+            "url": "https://sbnarchivedemo.psi.edu/resource/orex/ocams/data_raw.html"
+        },
+        {
+            "name": "OSIRIS-REx OCAMS Calibrated science image data products",
+            "url": "/resource/orex/ocams/data_calibrated.html"
+        },
+        {
+            "name": "OSIRIS-REx OCAMS Reduced science image data products",
+            "url": "/resource/orex/ocams/data_reduced.html"
+        }
+    ],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    },
+    "isDocument": false,
+    "example": null,
+    "alternateLocations": []
+}

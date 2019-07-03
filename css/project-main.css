@@ -226,6 +226,23 @@ main aside {
   .mission-header ~ aside {
     margin-top: -40px; }
 
+.target-header {
+  background-color: black;
+  color: white;
+  margin-left: -0.7em;
+  margin-right: -0.7em;
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 20px; }
+  .target-header img {
+    max-height: 150px; }
+  .target-header h1 {
+    font-size: 2.5em; }
+  .target-header ~ aside {
+    margin-top: -40px; }
+
 table {
   clear: both;
   border: none;

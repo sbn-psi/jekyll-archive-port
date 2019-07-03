@@ -2,7 +2,8 @@
     "OSIRIS-REx": {
         "url": "/resource/orex",
         "icon": "/images/orex.png",
-        "color": "#09215D"
+        "color": "#09215D",
+        "tags": ["Orbiter"]
     },
     "NEAR": {
         "url": "/near",
