@@ -323,6 +323,14 @@ main aside {
     }
 }
 
+.target-mission-datatypes {
+    padding: 10px 0 0 10px;
+    border-left: 8px solid $blue;
+    .target-mission-datatype-datasets {
+        padding-left: 10px;
+    }
+}
+
 table {
     clear: both;
     border: none;

@@ -243,6 +243,12 @@ main aside {
   .target-header ~ aside {
     margin-top: -40px; }
 
+.target-mission-datatypes {
+  padding: 10px 0 0 10px;
+  border-left: 8px solid #859ec8; }
+  .target-mission-datatypes .target-mission-datatype-datasets {
+    padding-left: 10px; }
+
 table {
   clear: both;
   border: none;

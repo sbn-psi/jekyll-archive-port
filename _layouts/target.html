@@ -52,34 +52,47 @@ layout: default
 {% assign allMissions = site.data.missions %}
 
 <h2>Datasets:</h2>
-<table>
-    <thead>
-        <th>Mission</th>
-        <th>Data type</th>
-        <th>Datasets</th>
-    </thead><tbody>
-        {% for mission in allMissions %}
-        <tr>
-            {% assign datasets = site.datasets | where: "resource" | sort %}
-            {% assign dataTypes = datasets | map: 'tags' | uniq %}
+    {% for mission in allMissions %}
+    {% if target.missions contains mission[0] %}
+    <section class="target-mission-datatypes">
+        <h3>{{mission[0]}}</h3>
+        {% assign datasets = site.datasets | where: "resource", true | sort %}
+        {% assign dataTypes = datasets | map: 'tags' | uniq %}
 
-            {% capture datasetData %}
+        {% for dataType in dataTypes %}
+            {% assign tagData = site.data.tags[dataType] %}
+            {%- capture datasetsToDisplay -%}
+            {%- for dataset in datasets -%}
+                
+                {%- if dataset.layout == 'bundle' -%}
+                {%- assign data = site.data.bundles[dataset.dataset] -%}
+                {%- elsif dataset.layout == 'collection' -%}
+                {%- assign data = site.data.collections[dataset.dataset] -%}
+                {%- endif -%}
+
+                {%- if data.mission == mission[0] and dataset.resource and dataset.tags contains dataType -%}
+                {{ dataset.dataset }},
+                {%- endif -%}
+
+            {%- endfor -%}
+            {%- endcapture -%}
             
-            {% endcapture}
-
-            {% assign datasets = datasetData | split:','}
-        </tr>
-        {% assign tagData = site.data.tags[tag] %}
-        <div id="{{tag}}" class="tag-dataset">
-            <h2>{{ tagData.displayName }}</h2>
+            {% assign datasetsToDisplay = datasetsToDisplay | split: ',' | compact %}
+            {% if datasetsToDisplay.size > 0 %}
+            <div class="target-mission-datatype-datasets">
+            <h4>{{ tagData.contextualName }}</h4>
             <ul>
-            {% for dataset in datasets %}
-                {% if dataset.resource and dataset.tags contains tag %}
-                <li><a href="{{ dataset.url }}">{{ dataset.title }}</a></li>
-                {% endif %}
-            {% endfor %}
+
+                {% for datasetId in datasetsToDisplay %}
+                    {% assign dsid = datasetId %}
+                    {% assign ds = site.datasets | where: 'dataset', dsid | first %}
+                    <li><a href="{{ ds.url }}">{{ ds.title }}</a></li>
+                {% endfor %}
             </ul>
-        </div> 
+            </div>
+            {% endif %}
         {% endfor %}
-    </tbody>
-</table>
+
+    </section>
+    {% endif %}
+    {% endfor %}
