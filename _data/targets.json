@@ -18,12 +18,132 @@
         "url": "/target/jupiter/",
         "icon": "/images/jupiter.jpg",
         "description": "Jupiter is the fifth planet from our Sun. Its average distance is 484 million miles (778 million kilometers), or 5.2 AU. The stripes and swirls are cold, windy clouds of ammonia and water that are floating in an atmosphere of Hydrogen and Helium. This is the same ingredients as a star, though Jupiter isn't massive enough to ignite. Scientists think tha the magnetic field for Jupiter is created due to having a liquid Hydrogen and a 10 hour rotation rate. The rings are made of small, dark particles of dust. Scientists use Jupiter's intense gravity to hurl spacecrafts into the outer Solar System and beyond since there are no rockets powerful enough to do so. So far, there are 53 named moons and 26 that are awaiting to be named. The most scientific interesting ones are the first four moons that were discovered beyond Earth, the Galilean Moons.",
-        "missions": [],
+        "missions": ["Juno", "Voyager 1", "Voyager 2", "Pioneer 10", "Pioneer 11", "Galileo", "Cassini", "New Horizons", "Ulysses"],
         "tags": ["Planet"],
         "relatedTargets": [
             {
                 "name": "(101955) Bennu",
                 "relationship": "child"
+            },
+            {
+                "name": "Io",
+                "relationship": "child"
+            },
+            {
+                "name": "Europa",
+                "relationship": "child"
+            },
+            {
+                "name": "Ganymede",
+                "relationship": "child"
+            },
+            {
+                "name": "Callisto",
+                "relationship": "child"
+            }
+        ]
+    },
+    "Io": {
+        "major": true,
+        "url": "/target/io/",
+        "icon": "/images/io.jpg",
+        "description": "Io was discovered by Galileo Galilei in 1610, leading people to understand that our Solar System did not revolve around Earth. The Galilean moons were given their official names in the mid-1800. Io is the most volcanically active world in our Solar System. It is the third largest moon of Jupiter and is tidally locked. It has a thin atmosphere that is mostly made of sulfur dioxide. Io crosses the magnetic lines of Jupiter, which creates lightning in Jupiter's upper atmosphere, creates auroras in Jupiter's upper atmosphere, and inflates Jupiter's magnetosphere. ",
+        "missions": ["Juno", "Voyager 1", "Voyager 2", "Pioneer 10", "Pioneer 11", "Galileo", "Cassini", "New Horizons", "Ulysses"],
+        "tags": ["Moon", "Airless", "Satellite", "Volcanic"],
+        "relatedTargets": [
+            {
+                "name": "Jupiter",
+                "relationship": "parent"
+            },
+            {
+                "name": "Europa",
+                "relationship": "associated"
+            },
+            {
+                "name": "Ganymede",
+                "relationship": "associated"
+            },
+            {
+                "name": "Callisto",
+                "relationship": "associated"
+            }
+        ]
+    },
+    "Europa": {
+        "major": true,
+        "url": "/target/europa/",
+        "icon": "/images/europa.jpg",
+        "description": "Europa was discovered by Galileo Galilei in 1610, leading people to understand that our Solar System did not revolve around Earth. The Galilean moons were given their official names in the mid-1800. It is currently one of the best places to find life in the Solar System, having an abudant liquid water, energy and right chemical elements. There is an ice shell around the moon. Europa has an atmosphere of oxygen and may be venting water vapor into space. The salty water is able to induce a magnetic field that is able to disrupted Jupiter's magnetic field.",
+        "missions": ["Juno", "Voyager 1", "Voyager 2", "Pioneer 10", "Pioneer 11", "Galileo", "Cassini", "New Horizons", "Ulysses"],
+        "tags": ["Moon", "Atmospheric", "Satellite"],
+        "relatedTargets": [
+            {
+                "name": "Jupiter",
+                "relationship": "parent"
+            },
+            {
+                "name": "Io",
+                "relationship": "associated"
+            },
+            {
+                "name": "Ganymede",
+                "relationship": "associated"
+            },
+            {
+                "name": "Callisto",
+                "relationship": "associated"
+            }
+        ]
+    },
+    "Ganymede": {
+        "major": true,
+        "url": "/target/ganymede/",
+        "icon": "/images/ganymede.jpg",
+        "description": "Ganymede was discovered by Galileo Galilei in 1610, leading people to understand that our Solar System did not revolve around Earth. The Galilean moons were given their official names in the mid-1800. Ganymede is tidally locked with Jupiter and has a resonance with Io and Europa. It is the largest moon in the Solar System. Its magnetic field creates auroras in the north and south poles. The dark regions are older material than the light regions. It is an icy body with an ocean under its surface. There is a thin oxygen atmosphere. The surface is believed to be a mixture of ice and rock.",
+        "missions": ["Juno", "Voyager 1", "Voyager 2", "Pioneer 10", "Pioneer 11", "Galileo", "Cassini", "New Horizons", "Ulysses"],
+        "tags": ["Moon", "Atmospheric", "Satellite", "Icy"],
+        "relatedTargets": [
+            {
+                "name": "Jupiter",
+                "relationship": "parent"
+            },
+            {
+                "name": "Io",
+                "relationship": "associated"
+            },
+            {
+                "name": "Europa",
+                "relationship": "associated"
+            },
+            {
+                "name": "Callisto",
+                "relationship": "associated"
+            }
+        ]
+    },
+    "Callisto": {
+        "major": true,
+        "url": "/target/callisto/",
+        "icon": "/images/callisto.jpg",
+        "description": "Callisto was discovered by Galileo Galilei in 1610, leading people to understand that our Solar System did not revolve around Earth. The Galilean moons were given their official names in the mid-1800. Callisto is the second largest moon of Jupiter and about the same size as Mercury. It is tidally locked with Jupiter. It may have a subsurface ocean. Callisto has a thin carbon dioxide, oxygen and hydrogen exosphere. There is no geologic activity currently happening.",
+        "missions": ["Juno", "Voyager 1", "Voyager 2", "Pioneer 10", "Pioneer 11", "Galileo", "Cassini", "New Horizons", "Ulysses"],
+        "tags": ["Moon", "Atmospheric", "Satellite", "Icy"],
+        "relatedTargets": [
+            {
+                "name": "Jupiter",
+                "relationship": "parent"
+            },
+            {
+                "name": "Io",
+                "relationship": "associated"
+            },
+            {
+                "name": "Europa",
+                "relationship": "associated"
+            },
+            {
+                "name": "Ganymede",
+                "relationship": "associated"
             }
         ]
     }
