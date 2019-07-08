@@ -3,7 +3,9 @@
         "url": "/resource/orex",
         "icon": "/images/orex.png",
         "color": "#09215D",
-        "tags": ["Orbiter"]
+        "description": "The OSIRIS-REx (Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer) is a NASA asteroid study and sample-return mission. The mission's main goal is to obtain a sample of at least 60 grams (2.1 oz) from 101955 Bennu, a carbonaceous near-Earth asteroid, and return the sample to Earth for a detailed analysis. The material returned is expected to enable scientists to learn more about the formation and evolution of the Solar System, its initial stages of planet formation, and the source of organic compounds that led to the formation of life on Earth. If successful, OSIRIS-REx will be the first U.S. spacecraft to return samples from an asteroid.",
+        "tags": ["Orbiter"],
+        "targets": ["(101955) Bennu"]
     },
     "NEAR": {
         "url": "/near",

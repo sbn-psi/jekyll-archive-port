@@ -3,7 +3,7 @@
         "major": true,
         "url": "/target/bennu/",
         "icon": "/images/bennu.jpg",
-        "description": "Hi from bennu",
+        "description": "101955 Bennu (provisional designation 1999 RQ36) is a carbonaceous asteroid in the Apollo group discovered by the LINEAR Project on 11 September 1999. It is a potentially hazardous object that is listed on the Sentry Risk Table with the second-highest cumulative rating on the Palermo Technical Impact Hazard Scale. It has a cumulative 1-in-2,700 chance of impacting Earth between 2175 and 2199. It is named after the Bennu, the ancient Egyptian mythological bird associated with the Sun, creation, and rebirth.",
         "missions": ["OSIRIS-REx"],
         "tags": ["NEO", "PHA", "Apollo"],
         "relatedTargets": [
@@ -17,7 +17,7 @@
         "major": true,
         "url": "/target/jupiter/",
         "icon": "/images/jupiter.jpg",
-        "description": "Hi from jupiter",
+        "description": "Jupiter is the fifth planet from our Sun. Its average distance is 484 million miles (778 million kilometers), or 5.2 AU. The stripes and swirls are cold, windy clouds of ammonia and water that are floating in an atmosphere of Hydrogen and Helium. This is the same ingredients as a star, though Jupiter isn't massive enough to ignite. Scientists think tha the magnetic field for Jupiter is created due to having a liquid Hydrogen and a 10 hour rotation rate. The rings are made of small, dark particles of dust. Scientists use Jupiter's intense gravity to hurl spacecrafts into the outer Solar System and beyond since there are no rockets powerful enough to do so. So far, there are 53 named moons and 26 that are awaiting to be named. The most scientific interesting ones are the first four moons that were discovered beyond Earth, the Galilean Moons.",
         "missions": [],
         "tags": ["Planet"],
         "relatedTargets": [

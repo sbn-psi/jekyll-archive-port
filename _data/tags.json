@@ -33,7 +33,7 @@
         "parent": "asteroid"
     },
     "Orbiter": {
-        "displayName": "Orbiter Datasets",
+        "displayName": "Orbiter",
         "contextualName": "Orbiter Data",
         "url": "/datasets/#orbiter",
         "type": "mission"
