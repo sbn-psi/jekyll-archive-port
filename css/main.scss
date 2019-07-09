@@ -279,7 +279,7 @@ main aside {
     }
 }
 
-.mission-header {
+.mission-header, .target-header, .instrument-header {
     color: white;
     margin-left: -$main-padding;
     margin-right: -$main-padding;
@@ -298,29 +298,15 @@ main aside {
     & ~ aside {
         margin-top: -40px;
     }
-}
 
+}
 
 .target-header {
     background-color: black;
-    color: white;
-    margin-left: -$main-padding;
-    margin-right: -$main-padding;
-    
-    display: flex;
-    text-align: center;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 20px;
-    img {
-        max-height: 150px;
-    }
-    h1 {
-        font-size: 2.5em;
-    }
-    & ~ aside {
-        margin-top: -40px;
-    }
+}
+
+.instrument-header {
+    background-color: $superDarkGrey;
 }
 
 .target-mission-datatypes {

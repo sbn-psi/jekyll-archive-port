@@ -210,7 +210,7 @@ main aside {
       border-top: 20px solid red;
       border-right: 20px solid transparent; }
 
-.mission-header {
+.mission-header, .target-header, .instrument-header {
   color: white;
   margin-left: -0.7em;
   margin-right: -0.7em;
@@ -219,29 +219,18 @@ main aside {
   flex-flow: row wrap;
   align-items: center;
   padding: 20px; }
-  .mission-header img {
+  .mission-header img, .target-header img, .instrument-header img {
     max-height: 150px; }
-  .mission-header h1 {
+  .mission-header h1, .target-header h1, .instrument-header h1 {
     font-size: 2.5em; }
-  .mission-header ~ aside {
+  .mission-header ~ aside, .target-header ~ aside, .instrument-header ~ aside {
     margin-top: -40px; }
 
 .target-header {
-  background-color: black;
-  color: white;
-  margin-left: -0.7em;
-  margin-right: -0.7em;
-  display: flex;
-  text-align: center;
-  flex-flow: row wrap;
-  align-items: center;
-  padding: 20px; }
-  .target-header img {
-    max-height: 150px; }
-  .target-header h1 {
-    font-size: 2.5em; }
-  .target-header ~ aside {
-    margin-top: -40px; }
+  background-color: black; }
+
+.instrument-header {
+  background-color: #646464; }
 
 .target-mission-datatypes {
   padding: 10px 0 0 10px;

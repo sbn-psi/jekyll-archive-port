@@ -1,0 +1,56 @@
+{
+    "urn:nasa:pds:context:instrument:ocams.orex": {
+        "name": "The OSIRIS-REx Camera Suite Suite (OCAMS) aboard the OSIRIS-REx spacecraft",
+        "contextualName": "OSIRIS-REx Camera Suite Suite (OCAMS)",
+        "url": "/instrument/ocams.orex",
+        "description": "The OSIRIS-REx Camera Suite (OCAMS) is a set of three cameras designed to support the mission through all phases, from approach to sample collection. The asteroid is first acquired through the PolyCam, an 8” Ritchey-Chretien telescope capable of detecting up to 12th magnitude objects limited by spacecraft jitter. As features on the asteroid become resolvable, PolyCam is used for preliminary mapping at a surface resolution of less than twenty-five cm. MapCam performs mapping at a suite of phase angles using a panchromatic and four color filters. The color filters are the b’, v, w, and x-bands, which, except for the b’ filter, are similar in bandwidth to the ECAS filter set used by ground-based astronomers. Several major survey campaigns are conducted with both the MapCam and PolyCam to select and characterize potential sample sites on Bennu. Reconnaissance sample site flyover sorties provide centimeter and sub-centimeter scale Polycam images to provide both context and confirmation of TAGSAM (Touch And Go Sample Acquisition Mechanism) ingestable material. The final sampling sequence is documented by the wide-field SamCam and gives the context for the recovered sample. All cameras use identical detector arrays with different focal lengths separated by a factor of 5. The 3 cameras in the instrument suite provide overlapping capabilities and are functionally redundant [Rizk et al. 2018].",
+        "tags": ["Imager"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    },
+    "urn:nasa:pds:context:instrument:tagcams.orex": {
+        "name": "The Touch-and-Go Camera Suite (TAGCAMS) aboard the OSIRIS-REx spacecraft",
+        "contextualName": "Touch-and-Go Camera Suite (TAGCAMS)",
+        "url": "/instrument/tagcams.orex",
+        "description": "The Touch-and-Go Camera Suite (TAGCAMS) consists of three similar camera heads, each suited for a particular purpose. The Navigation Camera (NavCam) is a wide-angle framing camera used for optical navigation. The Natural Feature Tracking Camera NFTCam) is a second framing camera used for landmark identification and autonomous feature tracking to aid in sample acquisition. Finally, the Stowage Camera (StowCam) is used to document the insertion of the sample collection head into the Sample Return Capsule (SRC). The OSIRIS-REx Science Processing and Operation Center located at the University of Arizona produces these data products and distributes them to the OSIRIS-REx Flight Dynamics Team, the Lockheed Martin Mission Support Area, the Science Team and the Planetary Data System.",
+        "tags": ["Imager"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    },
+    "urn:nasa:pds:context:instrument:ovirs.orex": {
+        "name": "The OSIRIS-REx Visible and Near InfraRed Spectrometer (OVIRS) aboard the OSIRIS-REx spacecraft",
+        "contextualName": "OSIRIS-REx Visible and Near InfraRed Spectrometer (OVIRS)",
+        "url": "/instrument/ovirs.orex",
+        "description": "The OSIRIS Visible and near-IR Spectrometer (OVIRS) is a point spectrometer with a 4-mrad field of view (FOV) that provides spectra over the wavelength range of 0.4 – 4.3 μm to map the visible and near infrared characteristics of the surface of the asteroid (101955) Bennu. It employs wedged filters (also called a linear variable filter) to provide the spectrum. A wedged filter is a two-dimensional spectral filter in which the wavelength of transmitted light varies in a well-defined fashion with position along one of the spatial dimensions.",
+        "tags": ["Spectrometer"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    },
+    "urn:nasa:pds:context:instrument:otes.orex": {
+        "name": "The OSIRIS-REx Thermal Emission Spectrometer (OTES) aboard the OSIRIS-REx spacecraft",
+        "contextualName": "OSIRIS-REx Thermal Emission Spectrometer (OTES)",
+        "url": "/instrument/otes.orex",
+        "description": "The OSIRIS-REx Thermal Emission Spectrometer (OTES) is a small infrared (4-50 µm) point spectrometer that acquires an interferogram every 2 seconds. Interferograms are processed on the ground and converted to infrared spectra. OTES uses space and internal calibration target views for calibration. OTES will map Bennu and the sample site from a distance of 7 to 0.5 km with 55 to 4 m resolution using spacecraft and asteroid motion.",
+        "tags": ["Spectrometer"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    },
+    "urn:nasa:pds:context:instrument:rexis.orex": {
+        "name": "The Regolith X-Ray Imaging Spectrometer (REXIS) onboard the OSIRIS-REx spacecraft",
+        "contextualName": "Regolith X-Ray Imaging Spectrometer (REXIS)",
+        "url": "/instrument/rexis.orex",
+        "description": "The Regolith X-ray Imaging Spectrometer (REXIS) will provide an X-ray map of Bennu, complementing core OSIRIS-REx mission science. REXIS has been selected as an education and public outreach element of the OSIRIS-REx mission investigation after a competitive selection process. As a Student Collaboration Experiment (SCE), REXIS will be incorporated into the OSIRIS-REx spacecraft on a non-impact basis and will remain clearly separable from the rest of the OSIRIS-REx investigation. Data analysis will be handled as a student project, available to both Harvard and MIT students, for credit or non-credit within the MIT curriculum, and within the MIT Undergraduate Research Opportunities Program (UROP).",
+        "tags": ["Spectrometer"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    },
+    "urn:nasa:pds:context:instrument:ola.orex": {
+        "name": "The OSIRIS-REx Laser Altimeter (OLA) aboard the OSIRIS-REx spacecraft",
+        "contextualName": "OSIRIS-REx Laser Altimeter (OLA)",
+        "url": "/instrument/ola.orex",
+        "description": "TThe OSIRIS-REx Laser Altimeter (OLA) is a two-axis scanning lidar (Light Detection and Ranging) instrument that will provide high-resolution topographical information throughout the entire mission. OLA has a single common receiver and two complementary transmitter assemblies, which enhance the resolution of its data. OLA’s high-energy laser transmitter (HELT) is used for ranging and mapping from 1 to 7.5 km and collects returns at 100Hz. The low-energy laser transmitter (LELT) collects returns at 10kHz and is used for ranging and imaging at smaller distances (~200 m to 1 km). The repetition rate of these transmitters sets the data acquisition rate of OLA. Laser pulses from both the low and high energy transmitters are directed onto movable scanning mirror, which is co-aligned with the field of view of the receiver telescope limiting the effects of background solar radiation. Each pulse provides target range, azimuth, elevation, received intensity and a time-tag.",
+        "tags": ["Altimeter"],
+        "mission": "OSIRIS-REx",
+        "prime": true
+    }
+}

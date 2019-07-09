@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-{% assign mission = site.data.missions[page.mission] %}
-{% assign targets = mission.targets %} 
+{% assign instrument = site.data.instruments[page.instrument] %}
+{% assign mission = site.data.missions[instrument.mission] %} 
 
 <div id="taxonomy">
     <h3>Relevant Tags:</h3>
-    {% for tag in mission.tags %}
+    {% for tag in instrument.tags %}
     <div class="banner">
         {% assign tagData = site.data.tags[tag] %}
         <a class="ignore-a-styling" href="{{ tagData.url }}">
@@ -16,31 +16,33 @@ layout: default
     {% endfor %}
 </div>
     
-<div class="mission-header" style="background-color: {{ mission.color }}">
-    <img src="{{ mission.icon }}">
-    <h1> {{ page.mission }} Data Archive </h1>
+<div class="instrument-header">
+    <h1> {{ instrument.name }} </h1>
 </div>
 
 <aside>
     <section class="dataset-metadata">
-        <h2>Related Targets:</h2>
-        {% for targetName in targets %}
+        <h2>On Mission:</h2>
+        <p><a class="ignore-a-styling" href="{{ mission.url }}"> {{ instrument.mission }}</a></p>
+
+        <h2>Targeted bodies:</h2>
+        {% for targetName in mission.targets %}
             {% include related-target.html target=targetName %}
         {% endfor %}
 
-        <h2>Instruments</h2>
+        <h2>Other Instruments:</h2>
         {% for instrumentId in mission.instruments %}
             {% assign instrument = site.data.instruments[instrumentId] %}
-            <p><a class="ignore-a-styling" href="{{ instrument.url }}"> {{ instrument.contextualName }}</a></p>
+            {% if instrument.prime and instrumentId != page.instrument %}
+                <p><a class="ignore-a-styling" href="{{instrument.url}}"> {{instrument.contextualName}} </a></p>
+            {% endif %}
         {% endfor %}
     </section>
 </aside>
-<h3 itemprop="description" class="resource-description">{{ mission.description }}</h3>
+<h3 itemprop="description" class="resource-description">{{ instrument.description }}</h3>
      
 <h2>Datasets:</h2>
-    {% for target in targets %}
     <section class="target-mission-datatypes">
-        <h3>{{target}}</h3>
         {% assign datasets = site.datasets | where: "resource", true | sort %}
         {% assign dataTypes = datasets | map: 'tags' | uniq %}
 
@@ -55,7 +57,7 @@ layout: default
                 {%- assign data = site.data.collections[dataset.dataset] -%}
                 {%- endif -%}
 
-                {%- if data.target.name == target and dataset.resource and dataset.tags contains dataType -%}
+                {%- if data.instrument == page.instrument and dataset.resource and dataset.tags contains dataType -%}
                 {{ dataset.dataset }},
                 {%- endif -%}
 
@@ -76,6 +78,4 @@ layout: default
             </div>
             {% endif %}
         {% endfor %}
-
     </section>
-    {% endfor %}

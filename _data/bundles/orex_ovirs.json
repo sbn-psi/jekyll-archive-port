@@ -12,6 +12,7 @@
     "abstract": "This bundle collects all the operational data products produced by the OSIRIS-REx Visible and InfraRed Spectrometer (OVIRS). OVIRS is used for the spectral characterization of the surface of (101955) Bennu.",
     "citation": "Reuters, D.C., A.A. Simon, A. Lunsford, and D.S. Lauretta, Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer (OSIRIS-REx): Visible and InfraRed Spectrometer (OVIRS) Bundle, urn:nasa:pds:orex.ovirs, NASA Planetary Data System, 2019.",
     "mission": "OSIRIS-REx",
+    "instrument": "urn:nasa:pds:context:instrument:ovirs.orex",
     "published": false,
     "delivery": {
         "completionText": "The latest release includes data from the Cruise 1, Earth Gravity Assist, and Cruise 2 mission phases.",

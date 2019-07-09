@@ -25,6 +25,7 @@
     },
     "alternateLocation": null,
     "mission": "OSIRIS-REx",
+    "instrument": "urn:nasa:pds:context:instrument:ocams.orex",
     "target": {
         "name": "(101955) Bennu",
         "type": "Asteroid"
