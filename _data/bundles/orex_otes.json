@@ -1,0 +1,130 @@
+{
+    "lidvid": "urn:nasa:pds:orex.otes",
+    "name": "OSIRIS-REx OTES Bundle",
+    "authorList": [
+        "Reuters, D.C.",
+        " Simon, A.A.",
+        " Lunsford, A.",
+        " Lauretta, D."
+    ],
+    "datePublished": null,
+    "humanDescription": null,
+    "abstract": "This bundle collects all the operational data products produced by the OSIRIS-REx Thermal Emission Spectrometer (OTES). OTES is used for the spectral characterization of the surface of (101955) Bennu.",
+    "citation": "Christensen, P., V. Hamilton, S. Anwar, G. Mehall, and D.S. Lauretta, Origins, Spectral Interpretation, Resource Identification, Security, Regolith Explorer (OSIRIS-REx): OSIRIS-REx Thermal Emission Spectrometer Bundle, urn:nasa:pds:orex.otes, NASA Planetary Data System, 2019.",
+    "mission": "OSIRIS-REx",
+    "instrument": "urn:nasa:pds:context:instrument:ovirs.orex",
+    "published": false,
+    "delivery": {
+        "completionText": "The latest release includes data from the Cruise 1, Earth Gravity Assist, Cruise 2 and most of the Bennu Approach mission phases.",
+        "date": "June 28, 2019"
+    },
+    "location": {
+        "browseUrl": "https://sbnarchive.psi.edu/pds4/orex/orex.otes/",
+        "downloadUrl": "https://sbnarchive.psi.edu/pds4/orex/orex.otes.zip",
+        "checksumUrl" : "https://sbnarchive.psi.edu/pds4/orex/orex.otes/checksums.txt",
+        "downloadSize": "11 GB"
+    },
+    "target": {
+        "name": "(101955) Bennu",
+        "type": "Asteroid"
+    },
+    "pds3": null,
+    "relatedData": [
+        {
+            "name": "OSIRIS-REx OCAMS Bundle",
+            "url": "/resource/orex/ocams.html"
+        },
+        {
+            "name": "OSIRIS-REx TAGCAMS Bundle",
+            "url": "/resource/orex/tagcams.html"
+        },
+        {
+            "name": "OSIRIS-REx Mission Bundle",
+            "url": "/resource/orex/orexmission.html"
+        }
+    ],
+    "relatedTools": [],
+    "collections": [
+        { 
+            "id": "",
+            "displayName": "Documents",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Camera Suite Description",
+                "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/document/ocams_inst_paper.pdf"
+            }
+        },{ 
+            "id": "",
+            "displayName": "Raw housekeeping data products",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        },{ 
+            "id": "",
+            "displayName": "Converted housekeeping data products",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        },{ 
+            "id": "",
+            "displayName": "Calibration file collection",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        },{ 
+            "id": "",
+            "displayName": "Raw science image data products",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        },{ 
+            "id": "",
+            "displayName": "Calibrated science image data products",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        },{ 
+            "id": "",
+            "displayName": "Reduced science image data products",
+            "location": {
+                "downloadUrl": "",
+                "size": "3 MB"
+            },
+            "example": {
+                "name": "Example File",
+                "url": ""
+            }
+        }
+    ],
+    "publisher": {
+        "name": "NASA Planetary Data System"
+    }
+}

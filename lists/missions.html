@@ -1,0 +1,36 @@
+---
+title: 'Missions by category'
+permalink: /missions/
+layout: default
+---
+
+{% assign parentTags = site.data.tags | where:"parent", nil %}
+{% assign missionTags = parentTags | where: "type", "mission" %}
+
+{% for tag in missionTags %}
+<div id="{{tag.id}}" class="tag-mission">
+    <h2>{{ tag.displayName }}</h2>
+    <ul>
+        {% for mission in site.data.missions %}
+            {% if mission[1].tags contains tag.id %}
+            <li><a href="{{mission[1].url}}">{{mission[0]}}</a></li>
+            {% endif %}    
+        {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+
+
+<script>
+    // show only desired category, if present
+    if (location.hash) {
+        var tagElements = document.getElementsByClassName('tag-mission');
+        var desiredTag = location.hash.substring(1);
+        for (element of tagElements) {
+            if (element.id !== desiredTag) {
+                console.log('hiding' + element)
+                element.style.display = 'none';
+            }
+        }
+    }
+</script>
