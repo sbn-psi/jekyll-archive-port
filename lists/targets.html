@@ -1,0 +1,37 @@
+---
+title: 'Targets by category'
+permalink: /targets/
+layout: default
+---
+<!-- Blame jekyll clunkiness for needing a hardcoded fake null value -->
+{% assign parentTags = site.data.tags | where:"parent", "none" %}
+{% assign targetTags = parentTags | where: "type", "target" %}
+
+{% for tag in targetTags %}
+<div id="{{tag.id}}" class="tag-target">
+    <h2>{{ tag.contextualName }}</h2>
+    <ul>
+        {% for target in site.data.targets %}
+            {% if target[1].tags contains tag.id %}
+            <li><a href="{{target[1].url}}">{{target[0]}}</a></li>
+            {% endif %}    
+        {% endfor %}
+    </ul>
+</div>
+{% include recursive-targets.html target=tag.id %}
+{% endfor %}
+
+
+<script>
+    // show only desired category, if present
+    if (location.hash) {
+        var tagElements = document.getElementsByClassName('tag-target');
+        var desiredTag = location.hash.substring(1);
+        for (element of tagElements) {
+            if (element.id !== desiredTag) {
+                console.log('hiding' + element)
+                element.style.display = 'none';
+            }
+        }
+    }
+</script>

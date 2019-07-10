@@ -1,0 +1,17 @@
+<div class="embedded-list">
+    {% assign subtags = site.data.tags | where: "parent",include.target %}
+    {% for subtag in subtags %}
+    <div id="{{subtag.id}}" class="tag-target">
+
+        <h2>{{ subtag.contextualName }}</h2>
+        <ul>
+            {% for target in site.data.targets %}
+            {% if target[1].tags contains subtag.id %}
+            <li><a href="{{target[1].url}}">{{target[0]}}</a></li>
+            {% endif %}    
+            {% endfor %}
+        </ul>
+    </div>
+    {% include recursive-targets.html target=subtag.id %}
+    {% endfor %}
+</div>

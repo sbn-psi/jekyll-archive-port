@@ -1,71 +1,146 @@
 {
     "asteroid": {
-        "displayName": "Asteroid Datasets",
-        "contextualName": "All Asteroid Data",
-        "url": "/datasets/#asteroid",
-        "type": "target"
+        "id": "asteroid",
+        "displayName": "Asteroid",
+        "contextualName": "All Asteroids",
+        "url": "/targets/#asteroid",
+        "type": "target",
+        "parent": "none"
     },
     "comet": {
-        "displayName": "Comet Datasets",
-        "contextualName": "All Comet Data",
-        "url": "/datasets/#comet",
-        "type": "target"
+        "id": "comet",
+        "displayName": "Comet",
+        "contextualName": "All Comets",
+        "url": "/targets/#comet",
+        "type": "target",
+        "parent": "none"
     },
     "NEO": {
-        "displayName": "Near-Earth Object Datasets",
-        "contextualName": "All NEO Data",
-        "url": "/datasets/#NEO",
+        "id": "NEO",
+        "displayName": "Near-Earth Object",
+        "contextualName": "Near-Earth Objects",
+        "url": "/targets/#NEO",
         "type": "target",
         "parent": "asteroid"
     },
     "PHA": {
-        "displayName": "Potentially Hazardous Object Datasets",
-        "contextualName": "All PHA Data",
-        "url": "/datasets/#PHA",
+        "id": "PHA",
+        "displayName": "Potentially Hazardous Object",
+        "contextualName": "Potentially Hazardous Objects",
+        "url": "/targets/#PHA",
         "type": "target",
         "parent": "asteroid"
     },
     "Apollo": {
-        "displayName": "Apollo asteroid Datasets",
-        "contextualName": "All Apollo Asteroid Data",
-        "url": "/datasets/#apollo",
+        "id": "Apollo",
+        "displayName": "Apollo asteroid",
+        "contextualName": "Apollo asteroids",
+        "url": "/targets/#apollo",
         "type": "target",
         "parent": "asteroid"
     },
+    "Planet": {
+        "id": "Planet",
+        "displayName": "Planet",
+        "contextualName": "Planets",
+        "url": "/targets/#Planet",
+        "type": "target",
+        "parent": "none"
+    },
+    "Moon": {
+        "id": "Moon",
+        "displayName": "Moon",
+        "contextualName": "Moons",
+        "url": "/targets/#Moon",
+        "type": "target",
+        "parent": "none"
+    },
+    "Airless": {
+        "id": "Airless",
+        "displayName": "Airless Moon",
+        "contextualName": "Airless Moons",
+        "url": "/targets/#Airless",
+        "type": "target",
+        "parent": "Moon"
+    },
+    "Satellite": {
+        "id": "Satellite",
+        "displayName": "Satellite",
+        "contextualName": "Satellites",
+        "url": "/targets/#Satellite",
+        "type": "target",
+        "parent": "none"
+    },
+    "Volcanic": {
+        "id": "Volcanic",
+        "displayName": "Volcanic Moon",
+        "contextualName": "Volcanic Moons",
+        "url": "/targets/#Volcanic",
+        "type": "target",
+        "parent": "Moon"
+    },
+    "Atmospheric": {
+        "id": "Atmospheric",
+        "displayName": "Atmospheric Moon",
+        "contextualName": "Atmospheric Moons",
+        "url": "/targets/#Atmospheric",
+        "type": "target",
+        "parent": "Moon"
+    },
+    "Icy": {
+        "id": "Icy",
+        "displayName": "Icy Moon",
+        "contextualName": "Icy Moons",
+        "url": "/targets/#Icy",
+        "type": "target",
+        "parent": "Moon"
+    },
     "Orbiter": {
+        "id": "Orbiter",
         "displayName": "Orbiter",
         "contextualName": "Orbiter Data",
-        "url": "/datasets/#orbiter",
-        "type": "mission"
+        "url": "/missions/#Orbiter",
+        "type": "mission",
+        "parent": "none"
     },
     "image": {
+        "id": "image",
         "displayName": "Image Datasets",
         "contextualName": "Image Data",
         "url": "/datasets/#image",
-        "type": "data"
+        "type": "data",
+        "parent": "none"
     },
     "spectra": {
+        "id": "spectra",
         "displayName": "Spectra Datasets",
         "contextualName": "Spectrophotometry and Spectra",
         "url": "/datasets/#spectra",
-        "type": "data"
+        "type": "data",
+        "parent": "none"
     },
     "physicalProperties": {
+        "id": "physicalProperties",
         "contextualName": "Physical Properties, including spin vectors, taxonomic classification, albedos, densities, and diameters",
         "displayName": "Physical Properties Datasets",
         "url": "/datasets/#physicalProperties",
-        "type": "data"
+        "type": "data",
+        "parent": "none"
     },
     "lightcurve": {
+        "id": "lightcurve",
         "contextualName": "Lightcurves",
         "displayName": "Lightcurve Datasets",
         "url": "/datasets/#lightcurve",
-        "type": "data"
+        "type": "data",
+        "parent": "none"
     },
     "photometry": {
+        "id": "photometry",
         "contextualName": "Photometry",
         "displayName": "Photometry Datasets",
         "url": "/datasets/#photometry",
-        "type": "data"
+        "type": "data",
+        "parent": "none"
     }
 }
