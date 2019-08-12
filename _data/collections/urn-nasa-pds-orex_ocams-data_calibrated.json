@@ -59,9 +59,9 @@
     },
     "isDocument": false,
     "example": {
-        "name": "20170922T231714S379_pol_iofL2pan_V017.fits",
-        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_calibrated/ega/20170922T231714S379_pol_iofL2pan_V017.fits",
-        "thumbnailUrl": "/images/examples/cba5l-6v09c.jpg"
+        "name": "20181116t101941s584_map_iofl2v.fits",
+        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_calibrated/approach/20181116t101941s584_map_iofl2v.fits",
+        "thumbnailUrl": "/images/examples/calibrated_20181116t101941s584_map_iofl2v.jpg"
     },
     "alternateLocations": [
         {

@@ -58,7 +58,11 @@
         "name": "NASA Planetary Data System"
     },
     "isDocument": false,
-    "example": null,
+    "example": {
+        "name": "20181116T100804S559_map_L1pan.fits",
+        "url": "https://sbnarchive.psi.edu/pds4/orex/orex.ocams/data_reduced/approach/20181116T100804S559_map_L1pan.fits",
+        "thumbnailUrl": "/images/examples/reduced_20181116T100804S559_map_L1pan.jpg"
+    },
     "alternateLocations": [
         {
             "name": "Cruise 1",
