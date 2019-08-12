@@ -141,6 +141,19 @@ bundle-container
     <!-- Bundle/Collection-specific content end -->
     
     
+    {% if data.relatedTools.size > 0 %}
+    <section class="dataset-tools">
+        <h3 class="header"> Available tools for this data: </h3>
+        <ul>
+            {% for related in data.relatedTools %}
+            <li>
+                <a href="{{ related.url }}"><div class="image-container"><img src="{{related.icon}}"/></div><span class="tool-title">{{ related.name }}</span></a>
+            </li>
+            {% endfor %}
+        </ul>
+        </section>
+    {% endif %}
+
     {% if data.citation %}
         <section class="dataset-citation">
             <img class="start-quote" src="/images/quotes-start.png">
@@ -171,18 +184,6 @@ bundle-container
                 {{ superseded.name }}
                 <a href="{{ superseded.location.browseUrl }}"><img class="tiny-icon" src="/images/icn-folder-rnd.png"></a>
                 <a href="{{ superseded.location.downloadUrl }}"><img class="tiny-icon" src="/images/icn-download-rnd.png">{% if superseded.location.downloadSize %} <span class="download-size">({{ superseded.location.downloadSize }})</span> {% endif %}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        </section>
-{% endif %}
-{% if data.relatedTools.size > 0 %}
-    <section class="dataset-related">
-        <h3 class="header"> Related Tools: </h3>
-        <ul>
-            {% for related in data.relatedTools %}
-            <li>
-                <a href="{{ related.url }}">{{ related.name }}</a>
             </li>
             {% endfor %}
         </ul>

@@ -29,7 +29,18 @@
     },
     "target": null,
     "pds3": null,
-    "relatedTools": [],
+    "relatedTools": [
+        {
+            "name": "Small Bodies Image Browser (SBIB)",
+            "icon": "https://sbn.psi.edu/pds/images/sbibscreenshot.png",
+            "url": "https://sbib.psi.edu/"
+        },
+        {
+            "name": "Planetary Image Atlas (Tagged Image Search)",
+            "icon": "https://pds-imaging.jpl.nasa.gov/images/img-planetaryatlas.gif",
+            "url": "https://pds-imaging.jpl.nasa.gov/search/"
+        }
+    ],
     "relatedData": [
         {
             "name": "OSIRIS-REx OCAMS Calibration file collection",
